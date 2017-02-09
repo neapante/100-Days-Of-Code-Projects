@@ -1,0 +1,66 @@
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\ApplicationInsights.config
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\roslyn\csc.exe
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\roslyn\Microsoft.CodeAnalysis.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\roslyn\Microsoft.CSharp.Core.targets
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\roslyn\Microsoft.VisualBasic.Core.targets
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\roslyn\System.Collections.Immutable.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\roslyn\System.Reflection.Metadata.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\roslyn\vbc.exe
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\roslyn\VBCSCompiler.exe
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\roslyn\VBCSCompiler.exe.config
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\100DaysOfCode.dll.config
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\100DaysOfCode.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\100DaysOfCode.pdb
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.Agent.Intercept.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.DependencyCollector.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.PerfCounterCollector.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.ServerTelemetryChannel.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.Web.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.WindowsServer.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.ApplicationInsights.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.DependencyCollector.xml
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.ServerTelemetryChannel.xml
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.Web.xml
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.WindowsServer.xml
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.ApplicationInsights.xml
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\obj\Debug\100DaysOfCode.csprojResolveAssemblyReference.cache
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\obj\Debug\100DaysOfCode.dll
+c:\users\enol\documents\visual studio 2015\Projects\100DaysOfCode\100DaysOfCode\obj\Debug\100DaysOfCode.pdb
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\ApplicationInsights.config
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\roslyn\csc.exe
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\roslyn\vbc.exe
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\roslyn\VBCSCompiler.exe
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\100DaysOfCode.dll.config
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\100DaysOfCode.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\100DaysOfCode.pdb
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.Web.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.Web.xml
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\obj\Debug\100DaysOfCode.csprojResolveAssemblyReference.cache
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\obj\Debug\100DaysOfCode.dll
+C:\Users\Enol\Google Drive\100DOC\100-days-of-code\100DaysOfCode\100DaysOfCode\obj\Debug\100DaysOfCode.pdb
