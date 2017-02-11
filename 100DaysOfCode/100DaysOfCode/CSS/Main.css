@@ -11,5 +11,17 @@
 #intro {
     background-color: #FF3333;
     color: #FFFFFF;
-    font-weight:bolder;
+    font-size: 21px;
+}
+
+.btn-primary {
+    background-color: #001489;
+    border: none;
+}
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
 }
