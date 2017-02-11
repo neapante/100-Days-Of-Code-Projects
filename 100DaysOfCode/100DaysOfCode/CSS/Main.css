@@ -7,3 +7,9 @@
 #navMain {
     border-radius: 0;
 }
+
+#intro {
+    background-color: #FF3333;
+    color: #FFFFFF;
+    font-weight:bolder;
+}
