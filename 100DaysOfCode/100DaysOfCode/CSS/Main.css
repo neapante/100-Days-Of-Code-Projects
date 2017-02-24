@@ -74,4 +74,13 @@ body {
     border-radius: 4px;
 }
 
+/*Project Page CSS*/
+.nav-project {
+    background-color: white;
+}
 
+.nav-project-title {
+    font-family: 'Bungee Hairline', cursive;
+    background-color: white;
+    font-size:xx-large;
+}

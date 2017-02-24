@@ -11,11 +11,12 @@
     <title>Noe Pante</title>
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
     <link href="../CSS/Main.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bungee+Hairline" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
         <%-- Start of Navigation --%>
-        <nav id="navMain" class="navbar navbar-inverse navbar-fixed-top">
+        <%--<nav id="navMain" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="../index.aspx">100DaysOfCode</a>
@@ -28,11 +29,20 @@
                     <li><a href="contact.aspx">Contact</a></li>
                 </ul>
             </div>
-        </nav>
+        </nav>--%>
         <%-- End of Navigation --%>
-    <div class="container-fluid">
-        <a name="home"></a>
-        <div class="jumbotron"><h1>Will upload projects soon.</h1></div>
+        <%-- New Nav --%>
+        <div class="container text-center">
+            <ol class="breadcrumb nav-project">
+                <li><a href="../index.aspx">Home</a></li>
+                <li><a href="blog.aspx">Blog</a></li>
+                <li class="active"><a href="#">Projects</a></li>
+                <li><a href="about.aspx">About</a></li>
+                <li><a href="contact.aspx">Contact</a></li>
+            </ol>
+        </div>
+    <div class="container-fluid  text-center">
+        <div class="jumbotron "><h1>PROJECTS</h1></div>
     </div>
     </form>
 </body>
