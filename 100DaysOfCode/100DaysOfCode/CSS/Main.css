@@ -75,6 +75,7 @@ body {
 }
 
 /*Project Page CSS*/
+
 .nav-project {
     background-color: white;
 }
@@ -82,5 +83,5 @@ body {
 .nav-project-title {
     font-family: 'Bungee Hairline', cursive;
     background-color: white;
-    font-size:xx-large;
+    font-size: 112px;
 }
