@@ -75,13 +75,23 @@ body {
 }
 
 /*Project Page CSS*/
+.body-project {
+    background-color: #ffff33;
+}
 
 .nav-project {
-    background-color: white;
+    background-color: inherit;
 }
 
 .nav-project-title {
-    font-family: 'Bungee Hairline', cursive;
-    background-color: white;
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: inherit;
     font-size: 112px;
+    /*border-style: solid;
+    border-color: red;
+    border-width: 2px;*/
+}
+
+.div-project-list {
+    font-family: 'Roboto', sans-serif;
 }
