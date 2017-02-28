@@ -11,7 +11,12 @@
     <title>Noe Pante</title>
     <link href="../Content/bootstrap.min.css?version=1" rel="stylesheet" />
     <link href="../CSS/Main.css?version=1" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One|Roboto" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Open+Sans" rel="stylesheet" />
+    <style>
+        .div-project-list {font-family: 'Open Sans', sans-serif;padding-top: 40px;}
+        .div-project-item {padding-bottom: 20px;}
+        .breadcrumb {font-family: 'Open Sans', sans-serif;}
+    </style>
 </head>
 <body class="body-project">
     <form id="form1" runat="server">
@@ -47,10 +52,10 @@
         <div class="nav-project-title text-center">PROJECTS</div>
 
         <div class="container div-project-list">
-            <div class="media">
+            <div class="media div-project-item">
               <div class="media-left">
                 <a href="#">
-                  <img class="media-object" src="http://placehold.it/64x64" alt="placeholder image">
+                  <img class="media-object" src="http://placehold.it/64x64" alt="placeholder image" />
                 </a>
               </div>
               <div class="media-body">
@@ -58,10 +63,10 @@
                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </div>
             </div>
-            <div class="media">
+            <div class="media div-project-item">
               <div class="media-left">
                 <a href="#">
-                  <img class="media-object" src="http://placehold.it/64x64" alt="placeholder image">
+                  <img class="media-object" src="http://placehold.it/64x64" alt="placeholder image" />
                 </a>
               </div>
               <div class="media-body">
@@ -69,10 +74,10 @@
                 Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
               </div>
             </div>
-            <div class="media">
+            <div class="media div-project-item">
               <div class="media-left">
                 <a href="#">
-                  <img class="media-object" src="http://placehold.it/64x64" alt="placeholder image">
+                  <img class="media-object" src="http://placehold.it/64x64" alt="placeholder image" />
                 </a>
               </div>
               <div class="media-body" >

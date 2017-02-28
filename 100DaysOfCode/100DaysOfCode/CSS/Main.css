@@ -84,7 +84,7 @@ body {
 }
 
 .nav-project-title {
-    font-family: 'Julius Sans One', sans-serif;
+    font-family: 'Comfortaa', cursive;
     background-color: inherit;
     font-size: 112px;
     /*border-style: solid;
@@ -92,6 +92,9 @@ body {
     border-width: 2px;*/
 }
 
-.div-project-list {
-    font-family: 'Roboto', sans-serif;
-}
+
+/*font-family: 'Comfortaa', cursive;
+font-family: 'Gruppo', cursive;
+font-family: 'Mallanna', sans-serif;
+font-family: 'Text Me One', sans-serif;
+font-family: 'Plaster', cursive;*/
