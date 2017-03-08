@@ -9,8 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Noe Pante</title>
-    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
-    <link href="../CSS/Main.css" rel="stylesheet" />
+    <link href="../Content/bootstrap.min.css?version=2" rel="stylesheet" />
+    <link href="../CSS/Main.css?version=2" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -33,6 +33,19 @@
     <div class="jumbotron">
         <div class="cotainer"><h1>This is About me and what i do.</h1></div>
     </div>
+        <div class="container">
+            <div class="row">
+                <div id="div1" class="col-md-4 col-about-1" runat="server">
+                    <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click" class="btn btn-primary" />
+                </div>
+                <div id="div2" class="col-md-4 col-about-1" runat="server">
+                    <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button1_Click" class="btn btn-primary" />
+                </div>
+                <div id="div3" class="col-md-4 col-about-1" runat="server">
+                    <asp:Button ID="Button3" runat="server" Text="Button" OnClick="Button1_Click" class="btn btn-primary" />
+                </div>
+            </div>
+        </div>
     </form>
 </body>
 </html>

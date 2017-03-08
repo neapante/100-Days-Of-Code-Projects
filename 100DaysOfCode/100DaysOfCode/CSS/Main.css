@@ -93,6 +93,17 @@ body {
 }
 
 
+/*About Page*/
+.col-about-1 {
+    background-color: gray;
+    height: 300px;
+    color: white;
+}
+
+.col-about-1-change {
+    background-color: white;
+    color: black;
+}
 /*font-family: 'Comfortaa', cursive;
 font-family: 'Gruppo', cursive;
 font-family: 'Mallanna', sans-serif;
