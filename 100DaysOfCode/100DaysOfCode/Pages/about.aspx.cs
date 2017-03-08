@@ -19,9 +19,7 @@ namespace _100DaysOfCode.Pages
             //Label1.BackColor = System.Drawing.Color.White;
             //WebControl label = (WebControl)FindControl("div1");
             //label.CssClass = "col-md-4 col-about-1-change";
-            div1.Visible = false;
-            div2.Visible = false;
-            div3.Visible = false;
+            div1.Style.Add("background-color", "#FFFFFF");
         }
     }
 }
