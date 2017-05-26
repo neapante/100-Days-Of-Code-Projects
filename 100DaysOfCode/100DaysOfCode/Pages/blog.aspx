@@ -19,9 +19,9 @@
         <nav id="navMain" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="../index.aspx">100DaysOfCode</a>
+                    <a class="navbar-brand" href="../index.aspx">Noe Pante</a>
                 </div>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="../index.aspx">Home</a></li>
                     <li class="active"><a href="Pages/blog.aspx">Blog</a></li>
                     <li><a href="../Pages/projects.aspx">Projects</a></li>

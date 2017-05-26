@@ -9,33 +9,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Noe Pante</title>
-    <link href="../Content/bootstrap.min.css?version=1" rel="stylesheet" type="text/css"/>
-    <link href="../CSS/Main.css?version=1" rel="stylesheet" type="text/css"/>
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=1" rel="stylesheet" type="text/css" />
+    <link href="../Content/bootstrap.min.css?version=2" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/Main.css?version=2" rel="stylesheet" type="text/css"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=2" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
+
         <%-- Start of Navigation --%>
-        <nav id="navMain" class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="../index.aspx">100DaysOfCode</a>
+            <nav id="navMain" class="navbar navbar-default navbar-fixed-top">
+                <div id="header" class="container">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="../index.aspx">noepante</a>
+                    </div>
+                    <div class="container">
+                        <ul id="menu" class="nav navbar-nav navbar-right">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="http://www.noepante.com/blog">Blog</a></li>
+                            <li><a href="Pages/projects.aspx">Projects</a></li>
+                            <li><a href="Pages/about.aspx">About</a></li>
+                            <li><a href="Pages/contact.aspx">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="Pages/blog.aspx">Blog</a></li>
-                    <li><a href="Pages/projects.aspx">Projects</a></li>
-                    <li><a href="Pages/about.aspx">About</a></li>
-                    <li><a href="Pages/contact.aspx">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+            </nav>
+
+
         <%-- End of Navigation --%>
         <div id="intro" class="jumbotron">
             <div class="container">
                 <%--<h1>This is a lousy introduction. Come back when it is finished. Have a great day!</h1>--%>
-                <h1>Welcome</h1>
-                <p>This is a lousy introduction. Come back when it is finished. Have a great day!</p>
+                <h1>Hello</h1>
+                <p>I create. I code. I blog. I run.</p>
                 <%-- Social Media button links --%>
                 <%--<ul class="list-inline">
                     <li><a class="btn btn-default btn-lg" href="#" target="_blank"><span class="fa fa-twitter fa-fw"></span><span>Twitter</span></a></li>
@@ -48,21 +53,17 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-3">
-                    <h2>Blog</h2>
-                    <p>
-                    100 Days of Code Logs / 
-                    Tech Thoughts /
-                    Travels /
-                    Misc.
-                    </p>        
-                </div>
-                <div class="col-md-3">
                     <h2>Projects</h2>
                     <p>
-                        FCC Code Samples in C# / 
-                        Character Stat Updater / 
-                        Project 3 / 
-                        Project 4
+                        This site.
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <h2>Blogs</h2>
+                    <p>
+                    100 Days of Code Logs / 
+                    South Korea Travel Log /
+                    Running Matter
                     </p>
                 </div>
                 <div class="col-md-3">
@@ -78,12 +79,12 @@
                 <div class="col-md-3">
                     <h2>Contact Me</h2>
                     <p>
-                    List of contacts
+                        List of contacts
                     </p>
                 </div>
             </div>
             <%-- List of separate buttons. Created own row so that buttons are all alligned --%>
-            <div class="row text-center" hidden="true">
+            <div class="row text-center" hidden="hidden">
                 <%-- Blog --%>
                 <div class="col-md-3">
                     <p><a class="btn btn-primary" href="Pages/blog.aspx" role="button">More &raquo;</a></p>
@@ -99,7 +100,7 @@
                 <%-- Contact Me --%>
                 <div class="col-md-3">
                     <p><a class="btn btn-primary" href="#" role="button">More &raquo;</a></p>
-                </div>            
+                </div>
             </div>
 
             <footer class="footer">

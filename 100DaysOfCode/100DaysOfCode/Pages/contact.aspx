@@ -18,11 +18,11 @@
         <nav id="navMain" class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="../index.aspx">100DaysOfCode</a>
+                    <a class="navbar-brand" href="../index.aspx">Noe Pante</a>
                 </div>
-                <ul class="nav navbar-nav">
+                <ul class="nav navbar-nav navbar-right">
                     <li><a href="../index.aspx">Home</a></li>
-                    <li><a href="blog.aspx">Blog</a></li>
+                    <li><a href="http://www.noepante.com/blog">Blog</a></li>
                     <li><a href="projects.aspx">Projects</a></li>
                     <li><a href="about.aspx">About</a></li>
                     <li class="active"><a href="#">Contact</a></li>
@@ -30,8 +30,8 @@
             </div>
         </nav>
         <%-- End of Navigation --%>
-    <div class="jumbotron">
-        <div class="container-fluid"><h1>contact me at neapante@gmail.com</h1></div>
+    <div class="jumbotron contact-header text-center">
+        <div class="container-fluid"><h1><span class="glyphicon glyphicon-send" aria-hidden="true"></span> Send me an e-mail neapante@gmail.com</h1></div>
     </div>
     </form>
 </body>

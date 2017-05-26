@@ -13,7 +13,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/07/2017 05:59:56</publishTime>
     </File>
     <File Include="bin/100DaysOfCode.dll">
-      <publishTime>03/05/2017 06:08:49</publishTime>
+      <publishTime>05/15/2017 23:05:52</publishTime>
     </File>
     <File Include="bin/ApplicationInsights.config">
       <publishTime>02/07/2017 05:59:56</publishTime>
@@ -103,7 +103,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/07/2017 06:13:44</publishTime>
     </File>
     <File Include="CSS/Main.css">
-      <publishTime>03/01/2017 07:24:09</publishTime>
+      <publishTime>05/15/2017 23:00:46</publishTime>
     </File>
     <File Include="fonts/glyphicons-halflings-regular.eot">
       <publishTime>02/07/2017 06:13:44</publishTime>
@@ -124,7 +124,7 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/07/2017 05:59:48</publishTime>
     </File>
     <File Include="index.aspx">
-      <publishTime>02/17/2017 07:18:15</publishTime>
+      <publishTime>05/15/2017 23:04:44</publishTime>
     </File>
     <File Include="Learning/box-styles.css">
       <publishTime>02/19/2017 07:21:02</publishTime>
@@ -136,19 +136,19 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/07/2017 06:14:24</publishTime>
     </File>
     <File Include="Pages/about.aspx">
-      <publishTime>02/17/2017 07:11:54</publishTime>
+      <publishTime>04/10/2017 06:42:53</publishTime>
     </File>
     <File Include="Pages/blog.aspx">
-      <publishTime>02/20/2017 06:05:25</publishTime>
+      <publishTime>03/14/2017 07:43:39</publishTime>
     </File>
     <File Include="Pages/Blog/Logs.html">
       <publishTime>02/17/2017 07:15:58</publishTime>
     </File>
     <File Include="Pages/contact.aspx">
-      <publishTime>02/17/2017 07:13:25</publishTime>
+      <publishTime>04/10/2017 06:42:54</publishTime>
     </File>
     <File Include="Pages/projects.aspx">
-      <publishTime>03/01/2017 07:24:04</publishTime>
+      <publishTime>04/10/2017 06:42:54</publishTime>
     </File>
     <File Include="Scripts/bootstrap.js">
       <publishTime>02/07/2017 06:13:44</publishTime>

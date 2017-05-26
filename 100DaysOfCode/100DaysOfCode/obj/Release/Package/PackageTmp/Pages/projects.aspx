@@ -40,7 +40,7 @@
         <div class="container text-center">
             <ol class="breadcrumb nav-project">
                 <li><a href="../index.aspx">Home</a></li>
-                <li><a href="blog.aspx">Blog</a></li>
+                <li><a href="http://www.noepante.com/blog">Blog</a></li>
                 <li class="active"><a href="#">Projects</a></li>
                 <li><a href="about.aspx">About</a></li>
                 <li><a href="contact.aspx">Contact</a></li>

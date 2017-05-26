@@ -40,7 +40,7 @@
         <div class="container text-center">
             <ol class="breadcrumb nav-project">
                 <li><a href="../index.aspx">Home</a></li>
-                <li><a href="blog.aspx">Blog</a></li>
+                <li><a href="http://www.noepante.com/blog">Blog</a></li>
                 <li class="active"><a href="#">Projects</a></li>
                 <li><a href="about.aspx">About</a></li>
                 <li><a href="contact.aspx">Contact</a></li>
@@ -59,8 +59,8 @@
                 </a>
               </div>
               <div class="media-body">
-                <h4 class="media-heading">Project 1</h4>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin commodo. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                <h4 class="media-heading">Pace Calculator</h4>
+                Pace calculator for running or biking.
               </div>
             </div>
             <div class="media div-project-item">
