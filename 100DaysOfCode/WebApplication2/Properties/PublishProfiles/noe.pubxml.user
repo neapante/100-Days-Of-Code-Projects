@@ -58,13 +58,52 @@ by editing this MSBuild file. In order to learn more about this please visit htt
       <publishTime>02/18/2015 17:07:08</publishTime>
     </File>
     <File Include="bin/WebApplication2.dll">
-      <publishTime>05/29/2017 20:30:53</publishTime>
+      <publishTime>05/29/2017 20:41:08</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.css.map">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="Content/bootstrap-theme.min.css.map">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff2">
+      <publishTime>05/29/2017 20:39:29</publishTime>
     </File>
     <File Include="index.aspx">
-      <publishTime>05/29/2017 18:18:26</publishTime>
+      <publishTime>05/29/2017 20:40:25</publishTime>
     </File>
     <File Include="packages.config">
-      <publishTime>05/28/2017 13:41:50</publishTime>
+      <publishTime>05/29/2017 20:39:29</publishTime>
     </File>
     <File Include="projects.aspx">
       <publishTime>05/29/2017 20:21:24</publishTime>
@@ -72,8 +111,23 @@ by editing this MSBuild file. In order to learn more about this please visit htt
     <File Include="Projects/pacecalc.aspx">
       <publishTime>05/29/2017 20:30:52</publishTime>
     </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/29/2017 20:39:29</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.js">
+      <publishTime>05/29/2017 20:39:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.js">
+      <publishTime>05/29/2017 20:39:27</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.9.1.min.map">
+      <publishTime>05/29/2017 20:39:27</publishTime>
+    </File>
     <File Include="Web.config">
-      <publishTime>05/29/2017 17:08:45</publishTime>
+      <publishTime>05/29/2017 20:41:08</publishTime>
     </File>
   </ItemGroup>
 </Project>
