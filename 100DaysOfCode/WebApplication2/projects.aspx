@@ -11,12 +11,19 @@
     <div>
         <p id="pageTitle" runat="server">Noe Pante : Portfolio : </p>
         <ul>
-            <li>Home</li>
+            <li><a href="index.aspx">Home</a></li>
             <li><a href="https://noepante.wordpress.com/">Blog</a></li>
             <li>Projects</li>
             <li>About</li>
             <li>Contact</li>
         </ul>
+
+        <p>Projects:</p>
+        <ol>
+            <li><a href="Projects/pacecalc.aspx">Pace Calculator</a></li>
+            <li>Project 2</li>
+            <li>Project 3</li>
+        </ol>
     </div>
     </form>
 </body>
