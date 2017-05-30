@@ -15,7 +15,9 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <p>Noe Pante : Portfolio : Home</p>
+            
+        <%-- Nav End --%>
+        <h1>Noe Pante : Portfolio : Home</h1>
         <ul>
             <li>Home</li>
             <li><a href="https://noepante.wordpress.com/">Blog</a></li>
