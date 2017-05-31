@@ -20,23 +20,24 @@
         </div>
 
         <div class="row">
-            <div class="col-md-3">
-             <%--<form class="form-inline">--%>
+            <div class="col-md-4">
                 <div class="form-group">
                     <label class="sr-only" for="inputDist">Distance (in KM)</label>
                     <div class="input-group">
                         <div class="input-group-addon">Distance</div>
-                        <input type="text" class="form-control" id="inputDist" placeholder="Distance (in KM)" runat="server" />
-                        <div class="input-group-addon">Km</div>
+                        <input type="text" class="form-control" id="inputDist" placeholder="Distance" runat="server" />
+                        <%--<div class="input-group-addon">Km</div>--%>
                     </div>
                 </div>
-                <%--<button type="submit" class="btn btn-primary">Transfer cash</button>--%>
-                <%--</form>--%>
+                <div class="form-group">
+                    <select id="distanceUnit" class="form-control" runat="server">
+                    </select>
+                </div>
             </div>
         </div>
         <br />
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-5">
                 <div class="form-group">
                     <label class="sr-only" for="time">Time</label>
                     <div class="input-group">
@@ -57,6 +58,11 @@
             <div class="col-md-3">
                 <div class="form-group">
                     <input type="submit" value="Calculate Pace" class="btn btn-success" id="calcPace" runat="server" onserverclick="calcPace_ServerClick" />
+                </div>
+                &nbsp; in &nbsp;
+                <div class="form-group">
+                    <select id="distanceUnitConvert" class="form-control" runat="server">
+                    </select>
                 </div>
             </div>
         </div>

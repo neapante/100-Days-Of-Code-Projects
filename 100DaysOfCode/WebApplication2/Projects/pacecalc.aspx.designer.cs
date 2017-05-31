@@ -31,6 +31,15 @@ namespace WebApplication2.Projects {
         protected global::System.Web.UI.HtmlControls.HtmlInputText inputDist;
         
         /// <summary>
+        /// distanceUnit control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect distanceUnit;
+        
+        /// <summary>
         /// inputHours control.
         /// </summary>
         /// <remarks>
@@ -65,6 +74,15 @@ namespace WebApplication2.Projects {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputSubmit calcPace;
+        
+        /// <summary>
+        /// distanceUnitConvert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlSelect distanceUnitConvert;
         
         /// <summary>
         /// paceValue control.

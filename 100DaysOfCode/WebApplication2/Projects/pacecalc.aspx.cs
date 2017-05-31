@@ -11,7 +11,10 @@ namespace WebApplication2.Projects
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(this.IsPostBack == false)
+            {
+                fillControls();
+            }
         }
 
         protected void calcPace_ServerClick(object sender, EventArgs e)
@@ -26,15 +29,46 @@ namespace WebApplication2.Projects
             if (hoursBool && minutesBool && secondsBool && distanceBool)
             {
                 decimal time = (hours * 60) + minute + (seconds / 60);
-                decimal pace = time / distance;
-                paceValue.InnerText = pace.ToString("0.##") + " min/km";
+                decimal conversion = 1.60934M;
+
+                //From km to miles
+                if (distanceUnit.SelectedIndex == 0 && distanceUnitConvert.SelectedIndex == 1)
+                {
+                    decimal pace = time / ( distance / conversion );
+                    paceValue.InnerText = pace.ToString("0.##") + " min/miles";
+                }
+                //From miles to km
+                else if (distanceUnit.SelectedIndex == 1 && distanceUnitConvert.SelectedIndex == 0) 
+                {
+                    decimal pace = time / (distance * conversion);
+                    paceValue.InnerText = pace.ToString("0.##") + " min/km";
+                }
+                //km
+                else if (distanceUnit.SelectedIndex == 0 && distanceUnitConvert.SelectedIndex == 0)
+                {
+                    decimal pace = time / (distance);
+                    paceValue.InnerText = pace.ToString("0.##") + " min/km";
+                }
+                //miles
+                else if (distanceUnit.SelectedIndex == 1 && distanceUnitConvert.SelectedIndex == 1)
+                {
+                    decimal pace = time / (distance);
+                    paceValue.InnerText = pace.ToString("0.##") + " min/miles";
+                }
+
             }
             else
             {
                 paceValue.InnerText = "Please Enter A Valid Value. Blanks and letters are not allowed.";
             }
+        }
 
-
+        protected void fillControls()
+        {
+            distanceUnit.Items.Add("kilometers");
+            distanceUnit.Items.Add("miles");
+            distanceUnitConvert.Items.Add("kilometers");
+            distanceUnitConvert.Items.Add("miles");
         }
     }
 }
