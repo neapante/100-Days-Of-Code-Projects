@@ -16,16 +16,18 @@ namespace WebApplication2.Projects
 
         protected void calcPace_ServerClick(object sender, EventArgs e)
         {
-            decimal minute, seconds, distance;
-            bool minuteBool = Decimal.TryParse(inputMin.Value, out minute);
+            decimal hours, minute, seconds, distance;
+            bool hoursBool = Decimal.TryParse(inputHours.Value, out hours);
+            bool minutesBool = Decimal.TryParse(inputMin.Value, out minute);
             bool secondsBool = Decimal.TryParse(inputSec.Value, out seconds);
             bool distanceBool = Decimal.TryParse(inputDist.Value, out distance);
+           
 
-            if (minuteBool && secondsBool && distanceBool)
+            if (hoursBool && minutesBool && secondsBool && distanceBool)
             {
-                decimal time = minute + (seconds / 60);
+                decimal time = (hours * 60) + minute + (seconds / 60);
                 decimal pace = time / distance;
-                paceValue.InnerText = pace.ToString() + " min/km";
+                paceValue.InnerText = pace.ToString("0.##") + " min/km";
             }
             else
             {

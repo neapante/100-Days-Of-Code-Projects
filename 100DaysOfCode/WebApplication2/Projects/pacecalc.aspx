@@ -13,39 +13,55 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=2" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" class="form-inline" runat="server">
     <div>
         <div class="page-header">
             <h2>Pace Calculator</h2>
         </div>
 
         <div class="row">
-            <div class="col-md-4">
-                <%--<form class="form-inline">--%>
+            <div class="col-md-3">
+             <%--<form class="form-inline">--%>
                 <div class="form-group">
                     <label class="sr-only" for="inputDist">Distance (in KM)</label>
                     <div class="input-group">
                         <div class="input-group-addon">Distance</div>
-                        <input type="text" class="form-control" id="inputDist" placeholder="Distance" runat="server" />
+                        <input type="text" class="form-control" id="inputDist" placeholder="Distance (in KM)" runat="server" />
                         <div class="input-group-addon">Km</div>
                     </div>
                 </div>
                 <%--<button type="submit" class="btn btn-primary">Transfer cash</button>--%>
                 <%--</form>--%>
             </div>
-            <div class="col-md-1">
-                <%--<input type="text" id="inputDist" runat="server" />--%>
+        </div>
+        <br />
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label class="sr-only" for="time">Time</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">Time</div>
+                        <input type="text" class="form-control" id="inputHours" placeholder="Hours" runat="server" />
+                        <div class="input-group-addon">hr</div>
+                        <input type="text" class="form-control" id="inputMin" placeholder="Minutes" runat="server" />
+                        <div class="input-group-addon">min</div>
+                        <input type="text" class="form-control" id="inputSec" placeholder="Seconds" runat="server" />
+                        <div class="input-group-addon">sec</div>
+                    </div>
+                </div>
             </div>
         </div>
         <br />
         <br />
-        Your time: &nbsp;
-        <input type="text" id="inputMin" runat="server" /> &nbsp; min :
-        <input type="text" id="inputSec" runat="server" /> &nbsp; sec
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <input type="submit" value="Calculate Pace" class="btn btn-success" id="calcPace" runat="server" onserverclick="calcPace_ServerClick" />
+                </div>
+            </div>
+        </div>
         <br />
-        <br />
-        <input type="submit" value="Calculate Pace" id="calcPace" runat="server" onserverclick="calcPace_ServerClick" />
-        <p runat="server">Your Pace: <span id="paceValue" runat="server"></span></p>
+        <h1 runat="server">Your Pace is: <span id="paceValue" runat="server">00.00 min/km</span></h1>
         
 
     </div>
