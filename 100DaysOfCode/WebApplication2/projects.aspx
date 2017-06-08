@@ -22,7 +22,7 @@
         <ol>
             <li><a href="Projects/FCC/basiccsharp.aspx">Learn C# and ASP.NET using FreeCodeCamp Framework - In Progress</a></li>
             <li><a href="Projects/pacecalc.aspx">Pace Calculator</a></li>
-            <li>Project 2</li>
+            <li><a href="Projects/FCC/randomquotemachine.aspx">Random Quote Machine</a></li>
             <li>Project 3</li>
         </ol>
     </div>
