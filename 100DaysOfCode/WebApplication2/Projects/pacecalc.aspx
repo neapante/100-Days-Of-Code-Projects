@@ -12,7 +12,7 @@
     <link href="../CSS/Main.css?version=2" rel="stylesheet" type="text/css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=2" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body class="pacecalc">
     <form id="form1" class="form-inline" runat="server">
     <div>
         <div class="page-header">

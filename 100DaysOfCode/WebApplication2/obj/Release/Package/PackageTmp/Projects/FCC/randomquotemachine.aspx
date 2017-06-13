@@ -4,14 +4,27 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Random Quote Machine</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../Content/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="../../CSS/randomquotegen.css?version=2" rel="stylesheet" type="text/css"/>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=2" rel="stylesheet" type="text/css" />
 </head>
-<body>
+<body class="rqm">
     <form id="form1" runat="server">
-    <div>
-        <input type="submit" value="Generate Quote" class="btn btn-success" id="generateQuote" runat="server" onserverclick="generateQuote_ServerClick" />
-        <p id="randomQuote" runat="server">Result</p>
-    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-8 text-center quoteContainer">
+                    <p id="randomQuote" runat="server">Quote</p>
+                    <input type="submit" value="Generate Quote" class="btn btn-success" id="generateQuote" runat="server" onserverclick="generateQuote_ServerClick" />
+                    <%--<p id="stats" runat="server"></p>--%>
+                </div>
+                <div class="col-md-2"></div>
+            </div>
+        </div>
     </form>
 </body>
 </html>

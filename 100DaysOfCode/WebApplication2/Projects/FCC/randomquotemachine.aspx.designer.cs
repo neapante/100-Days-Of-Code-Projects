@@ -22,15 +22,6 @@ namespace WebApplication2.Projects.FCC {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// generateQuote control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit generateQuote;
-        
-        /// <summary>
         /// randomQuote control.
         /// </summary>
         /// <remarks>
@@ -38,5 +29,14 @@ namespace WebApplication2.Projects.FCC {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl randomQuote;
+        
+        /// <summary>
+        /// generateQuote control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputSubmit generateQuote;
     }
 }
