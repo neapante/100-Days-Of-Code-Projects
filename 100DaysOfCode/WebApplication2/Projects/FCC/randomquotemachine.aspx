@@ -17,9 +17,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2"></div>
+                <div class="col-md-8  quoteHeader">Excerpts from Iron John by Robert Bly</div>
+                <div class="col-md-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
                 <div class="col-md-8 text-center quoteContainer">
                     <p id="randomQuote" runat="server">Quote</p>
-                    <input type="submit" value="Generate Quote" class="btn btn-success" id="generateQuote" runat="server" onserverclick="generateQuote_ServerClick" />
+                    <input type="submit" value="Get Another Quote" class="btn btn-success" id="generateQuote" runat="server" onserverclick="generateQuote_ServerClick" />
                     <%--<p id="stats" runat="server"></p>--%>
                 </div>
                 <div class="col-md-2"></div>

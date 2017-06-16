@@ -10,9 +10,14 @@ body {
     background-color: #F2EFEA;
 }
 
+.quoteHeader {
+    padding: 0px;
+    margin: 0px;
+}
 
 .quoteContainer {
     padding-top: 50px;
     background-color:#BFD1D5;
     height: 500px
 }
+
