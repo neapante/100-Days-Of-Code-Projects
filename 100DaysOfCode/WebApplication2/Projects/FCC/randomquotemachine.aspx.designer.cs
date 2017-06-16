@@ -38,5 +38,14 @@ namespace WebApplication2.Projects.FCC {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputSubmit generateQuote;
+        
+        /// <summary>
+        /// twitShare control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlAnchor twitShare;
     }
 }

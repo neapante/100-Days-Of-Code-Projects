@@ -13,11 +13,27 @@ body {
 .quoteHeader {
     padding: 0px;
     margin: 0px;
+    font-family: 'Vidaloka', serif;
+    font-size: 24px;
 }
 
 .quoteContainer {
-    padding-top: 50px;
+    /*190px relative to 500px (body height)*/
+    padding-top: 190px;
     background-color:#BFD1D5;
-    height: 500px
+    height: 500px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+}
+
+.shareButton {
+    padding-right: 5px;
+    padding-bottom: 5px;
+    background-color:#BFD1D5;
+}
+
+/*Method on using Font Awesome on input*/
+input[type="submit"] {
+    font-family: FontAwesome;
 }
 

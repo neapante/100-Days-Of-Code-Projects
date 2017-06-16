@@ -125,6 +125,7 @@
     <Content Include="projects.aspx" />
     <Content Include="Projects\FCC\basiccsharp.aspx" />
     <Content Include="Projects\FCC\randomquotemachine.aspx" />
+    <Content Include="Projects\FCC\weatherapp.aspx" />
     <Content Include="Projects\pacecalc.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -163,6 +164,13 @@
     </Compile>
     <Compile Include="Projects\FCC\randomquotemachine.aspx.designer.cs">
       <DependentUpon>randomquotemachine.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\FCC\weatherapp.aspx.cs">
+      <DependentUpon>weatherapp.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\FCC\weatherapp.aspx.designer.cs">
+      <DependentUpon>weatherapp.aspx</DependentUpon>
     </Compile>
     <Compile Include="Projects\pacecalc.aspx.cs">
       <DependentUpon>pacecalc.aspx</DependentUpon>
