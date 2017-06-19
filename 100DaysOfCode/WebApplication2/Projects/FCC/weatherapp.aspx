@@ -10,7 +10,7 @@
     <%-- Dont forget to add below tag to use jquery --%>
     <script src="../../Scripts/jquery-3.1.1.js" type="text/javascript"></script>
     <%-- get location (lat,long) --%>
-    <script>
+    <%--<script>
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(function (position) {
                 $("#data").html("latitude: " + position.coords.latitude + "  <br>longitude: " + position.coords.longitude);
@@ -18,15 +18,44 @@
         } else {
             $("#data").html("Your browser does not support GEOLOCATION.")
         }
-    </script>
+    </script>--%>
+
+
 </head>
 <body>
+    <script>
+        $(document).ready(function () {
+            $("#getMessage").on("click", function () {
+                // Only change code below this line.
+                $.getJSON("https://api.apixu.com/v1/current.json?key=6ceb688f66a14438865211006170806&q=auto:ip", function (json) {
+                    $(".message").html(JSON.stringify(json));
+                });
+                // Only change code above this line.
+            });
+        });
+    </script>
     <form id="form1" runat="server">
     <div>
-        <div id="data">
+        <%--<div id="data">
             <h4>You are here:</h4>
+        </div>--%>
+        <div class="container-fluid">
+            <div class="row text-center">
+                <h2>Cat Photo Finder</h2>
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-12 well message">
+                    The message will go here
+                </div>
+            </div>
+            <div class="row text-center">
+                <div class="col-xs-12">
+                    <button id="getMessage" class="btn btn-primary">
+                        Get Message
+                    </button>
+                </div>
+            </div>
         </div>
-
     </div>
     </form>
 </body>
