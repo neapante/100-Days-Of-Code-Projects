@@ -8,7 +8,8 @@
     <%-- Hoping to use C# in the future, JS is the easiest way for now --%>
     <%-- Not working in Chrome since my hosting site is not secure, get browser --%>
     <%-- Dont forget to add below tag to use jquery --%>
-    <script src="../../Scripts/jquery-3.1.1.js" type="text/javascript"></script>
+    <script src="../../Scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="../../JS/weather.js" type="text/javascript"></script>
     <%-- get location (lat,long) --%>
     <%--<script>
         if (navigator.geolocation) {
@@ -20,20 +21,9 @@
         }
     </script>--%>
 
-
 </head>
 <body>
-    <script>
-        $(document).ready(function () {
-            $("#getMessage").on("click", function () {
-                // Only change code below this line.
-                $.getJSON("https://api.apixu.com/v1/current.json?key=6ceb688f66a14438865211006170806&q=auto:ip", function (json) {
-                    $(".message").html(JSON.stringify(json));
-                });
-                // Only change code above this line.
-            });
-        });
-    </script>
+
     <form id="form1" runat="server">
     <div>
         <%--<div id="data">
@@ -41,11 +31,17 @@
         </div>--%>
         <div class="container-fluid">
             <div class="row text-center">
-                <h2>Cat Photo Finder</h2>
+                <h2>Weather APP</h2>
             </div>
             <div class="row text-center">
                 <div class="col-xs-12 well message">
-                    The message will go here
+                    Weather API here
+                </div>
+            </div>
+            <br />
+            <div class="row text-center">
+                <div class="col-xs-12 well message2">
+                    Geolocation here
                 </div>
             </div>
             <div class="row text-center">
