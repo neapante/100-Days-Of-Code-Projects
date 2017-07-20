@@ -120,6 +120,9 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="CSS\randomquotegen.css" />
+    <Content Include="CSS\SanPedroBeeFarm\_JAZ2030.jpg" />
+    <Content Include="CSS\SanPedroBeeFarm\_JAZ2032.jpg" />
+    <Content Include="CSS\SanPedroBeeFarm\StyleSheet1.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="CSS\main.css" />
     <Content Include="JS\weather.js" />
@@ -136,6 +139,8 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Projects\sanpedrobeefarm.aspx" />
+    <Content Include="Projects\sanpedrobeefarm.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
@@ -181,6 +186,13 @@
     </Compile>
     <Compile Include="Projects\pacecalc.aspx.designer.cs">
       <DependentUpon>pacecalc.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\sanpedrobeefarm.aspx.cs">
+      <DependentUpon>sanpedrobeefarm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\sanpedrobeefarm.aspx.designer.cs">
+      <DependentUpon>sanpedrobeefarm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="index.aspx.cs">

@@ -23,7 +23,8 @@
             <li><a href="Projects/FCC/basiccsharp.aspx">Learn C# and ASP.NET using FreeCodeCamp Framework - In Progress</a></li>
             <li><a href="Projects/pacecalc.aspx">Pace Calculator</a></li>
             <li><a href="Projects/FCC/randomquotemachine.aspx">Random Quote Machine</a></li>
-            <li><a href="Projects/FCC/weatherapp.aspx">Show Local Weather</a></li>
+            <li><a href="https://codepen.io/neapante/full/BZWeRp/">Local Weather App using Apixu API</a></li>
+            <li><a href="Projects/sanpedrobeefarm.aspx">San Pedro Bee Farm</a></li>
         </ol>
     </div>
     </form>
