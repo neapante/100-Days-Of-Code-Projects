@@ -9,16 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="../Content/bootstrap.min.css?version=2" rel="stylesheet" type="text/css"/>
-    <link href="../CSS/SanPedroBeeFarm/StyleSheet1.css?version=2" rel="stylesheet" type="text/css" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=2" rel="stylesheet" type="text/css" />
     <script src="../Scripts/jquery-3.1.1.min.js" type="text/javascript"></script>
     <script src="../Scripts/bootstrap.min.js" type="text/javascript"></script>
+    <link href="../CSS/SanPedroBeeFarm/StyleSheet1.css?version=1" rel="stylesheet" type="text/css" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
             <%-- Navigation --%>
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default" id="mainNavbar">
                 <div class="container">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">

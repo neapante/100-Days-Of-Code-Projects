@@ -11,24 +11,35 @@
     <link href="../Content/bootstrap.min.css?version=2" rel="stylesheet" type="text/css"/>
     <link href="../CSS/Main.css?version=2" rel="stylesheet" type="text/css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=2" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet" />
 </head>
 <body>
     <form id="form1" runat="server">
-    <div>
+
             
         <%-- Nav End --%>
-        <h1>Noe Pante : Portfolio : Home</h1>
-        <ul>
-            <li>Home</li>
-            <li><a href="https://noepante.wordpress.com/">Blog</a></li>
-            <li><a href="projects.aspx">Projects</a></li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
         
+           
+            <div class="container-fluid">
+                <div class="row">
+                     <h1><strong>Noe Emmanuel Pante</strong></h1>
+                </div>
+                <div class="row">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                </div>
+                <div class="row">
+                    <ul class="list-inline">
+                        <li>Home</li>
+                        <li><a href="https://noepante.wordpress.com/">Blog</a></li>
+                        <li><a href="projects.aspx">Projects</a></li>
+                        <li>About</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
         <%-- Trust level identifier --%>
         <%--<p id="trustLevel" runat="server"></p>--%>
-    </div>
+  
     </form>
 </body>
 </html>
