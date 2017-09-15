@@ -2,11 +2,14 @@
     padding-top: 10px;
     padding-left: 50px;
     padding-right: 50px;
-    background-color: #F6F6F6;
+    background-color: #FFFFFF;
     font-family: 'Libre Baskerville', serif;
 }
 
-
+.bodyInfo {
+    padding: 0 0 0 0;
+    /*margin: 0 0 0 0;
+}
 .rqm {
     padding-top: 50px;
 }
