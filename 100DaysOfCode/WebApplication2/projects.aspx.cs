@@ -13,7 +13,7 @@ namespace WebApplication2
         {
 
             string pageName = this.Page.ToString().Substring(4, this.Page.ToString().Substring(4).Length - 5);
-            pageTitle.InnerText += pageName.First().ToString().ToUpper() + pageName.Substring(1);
+            //pageTitle.InnerText += pageName.First().ToString().ToUpper() + pageName.Substring(1);
         }
 
 
