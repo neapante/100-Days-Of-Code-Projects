@@ -8,8 +8,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../Content/bootstrap.min.css?version=1" rel="stylesheet" type="text/css"/>
-    <link href="../CSS/Main.css?version=1" rel="stylesheet" type="text/css"/>
+    <link href="../Content/bootstrap.min.css?version=2" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/Main.css?version=2" rel="stylesheet" type="text/css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=1" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet" />
 </head>
@@ -34,8 +34,8 @@
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#About-Me">About Me</a></li>
             <li><a href="#Works">Works</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#Resume">Resume</a></li>
+            <li><a href="#Contact-Me">Contact Me</a></li>
           </ul>
         </div>
       </div>
@@ -59,18 +59,122 @@
                 <section>
                     <a name="Works"></a>
                     <div class="row">
-                        <h1 class="text-right"><strong>Works</strong></h1>
-                        <div class="col-md-12">
-                        <strong>Current Projects</strong>
-                        <br /><br />
-                        <ul class="list-unstyled">
-                            <li><a href="Projects/pacecalc.aspx">Pace Calculator</a> - for calculating your running pace</li>
-                            <li><a href="Projects/FCC/randomquotemachine.aspx">Random Quote Machine</a></li>
-                            <li>Project 3</li>
-                            <li>Project 4</li>
-                        </ul>
+                        <h1 class=""><strong>Works</strong></h1>
+                        <%--<div class="col-md-12">
+                            <ul class="list-unstyled">
+                                <li><a href="Projects/pacecalc.aspx">Pace Calculator</a> - for calculating your running pace</li>
+                                <li><a href="Projects/FCC/randomquotemachine.aspx">Random Quote Machine</a></li>
+                                <li>Project 3</li>
+                                <li>Project 4</li>
+                            </ul>
+                        </div>--%>
                     </div>
+                    <div class="row" style="padding-top:10px;">
+                        <div class="col-xs-6 col-md-3">
+                            <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                             <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                             <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
+                        </div>
                     </div>
+                    <div class="row" style="padding-top:10px;">
+                        <div class="col-xs-6 col-md-3">
+                            <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                             <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                             <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
+                        </div>
+                    </div>
+                </section>
+                <%-- Resume --%>
+                <section>
+                    <a name="Resume"></a>
+                    <div class="row">
+                        <h1><strong>Resume</strong></h1>
+                        <div class="col-md-12 text-center">
+                            <h3>Experience</h3>
+                            <h4>Current</h4>
+                            <ul>
+                                <li>details</li>
+                                <li>details</li>
+                                <li>details</li>
+                            </ul>
+                            <h4>Current-1</h4>
+                            <ul>
+                                <li>details</li>
+                                <li>details</li>
+                                <li>details</li>
+                            </ul>
+                            <h4>Current-2</h4>
+                            <ul>
+                                <li>details</li>
+                                <li>details</li>
+                                <li>details</li>
+                            </ul>
+                            <h4>Current-3</h4>
+                            <ul>
+                                <li>details</li>
+                                <li>details</li>
+                                <li>details</li>
+                            </ul>
+<%--                        </div>
+                        <div class="col-md-6">--%>
+                            <h3>Education</h3>
+                            <h4>Current</h4>
+                            <ul>
+                                <li>details</li>
+                                <li>details</li>
+                                <li>details</li>
+                            </ul>
+                            <h4>Current-1</h4>
+                            <ul>
+                                <li>details</li>
+                                <li>details</li>
+                                <li>details</li>
+                            </ul>
+                            <h3>Trainings and Certifications</h3>
+                            <h4>Current</h4>
+                            <ul>
+                                <li>details</li>
+                                <li>details</li>
+                                <li>details</li>
+                            </ul>
+                            <h4>Current-1</h4>
+                            <ul>
+                                <li>details</li>
+                                <li>details</li>
+                                <li>details</li>
+                            </ul>
+                            <h4>Current-1</h4>
+                            <ul>
+                                <li>details</li>
+                                <li>details</li>
+                                <li>details</li>
+                            </ul>
+                            <h4>Current-1</h4>
+                            <ul>
+                                <li>details</li>
+                                <li>details</li>
+                                <li>details</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <a name="Contact-Me"></a>
+                    <h1>Contact and Follow me on the following links:</h1>
                 </section>
                     <%--<div class="col-md-4 bodyInfo">
                         <strong>Contact</strong>
