@@ -8,8 +8,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../Content/bootstrap.min.css?version=2" rel="stylesheet" type="text/css"/>
-    <link href="../CSS/Main.css?version=2" rel="stylesheet" type="text/css"/>
+    <link href="../Content/bootstrap.min.css?version=1" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/Main.css?version=1" rel="stylesheet" type="text/css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=1" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet" />
 </head>
@@ -103,68 +103,70 @@
                     <a name="Resume"></a>
                     <div class="row">
                         <h1><strong>Resume</strong></h1>
-                        <div class="col-md-12 text-center">
-                            <h3>Experience</h3>
-                            <h4>Current</h4>
-                            <ul>
+                        <div class="col-md-4">
+                            <h3 class="resume-heading exp">Experience</h3>
+                            <h4 class="work-title">Current</h4>
+                            <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4>Current-1</h4>
-                            <ul>
+                            <h4 class="work-title">Current-1</h4>
+                            <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4>Current-2</h4>
-                            <ul>
+                            <h4 class="work-title">Current-2</h4>
+                            <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4>Current-3</h4>
-                            <ul>
+                            <h4 class="work-title">Current-3</h4>
+                            <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-<%--                        </div>
-                        <div class="col-md-6">--%>
-                            <h3>Education</h3>
-                            <h4>Current</h4>
-                            <ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="resume-heading edu">Education</h3>
+                            <h4 class="work-title">Current</h4>
+                            <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4>Current-1</h4>
-                            <ul>
+                            <h4 class="work-title">Current-1</h4>
+                            <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h3>Trainings and Certifications</h3>
-                            <h4>Current</h4>
-                            <ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h3 class="resume-heading trcrt">Trainings and Certifications</h3>
+                            <h4 class="work-title">Current</h4>
+                            <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4>Current-1</h4>
-                            <ul>
+                            <h4 class="work-title">Current-1</h4>
+                            <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4>Current-1</h4>
-                            <ul>
+                            <h4 class="work-title">Current-1</h4>
+                            <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4>Current-1</h4>
-                            <ul>
+                            <h4 class="work-title">Current-1</h4>
+                            <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
@@ -174,7 +176,15 @@
                 </section>
                 <section>
                     <a name="Contact-Me"></a>
-                    <h1>Contact and Follow me on the following links:</h1>
+                    <div class="row">
+                        <h1><strong>Contact Me</strong></h1>
+                        <p>
+                            <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
+                            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
+                            <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
+                            <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                        </p>
+                    </div>"
                 </section>
                     <%--<div class="col-md-4 bodyInfo">
                         <strong>Contact</strong>
