@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">noepante</a>
+          <a class="navbar-brand" href="#"><i class="fa fa-circle-o-notch"></i> np</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -47,12 +47,11 @@
                     <div class="row">
                         <h1 class=""><strong>About Me</strong></h1>
                         <%--<hr />--%>
-                        <p>I am a Web and Desktop Tools Developer working in DXC, Philippines. 
-                        I develop internal web apps and desktop tools for the client that we support. 
-                        I mainly use C# and ASP.Net to create these tools but I am also well aware with HTML, CSS, Javascript, and VBscript.
-                        Currently I'm honing my C# knowledge so that I can build better tools.</p>
-                        <p>I like to learn and create things with code, pen, words, paint, camera and so on. As long as it is useful but sometimes it does not need to be.</p>
-                        <p>To know more about my working experience, check my LinkedIn or view my CV. Here</p>
+                        <p>A web and desktop app developer which weapon of choice is C# and ASP.Net. I also know desktop automation using VBScript.</p>
+                        <p>I'm currently occupied on learning the C# Language to know more what it can do. And also taking some interest on web graphics design.</p>
+                        <p>Other Technical Proficiencies: HTML, CSS, JavaScript, VBScript</p>
+                        <p>Skillset:Web and Desktop Developer, Tech Support, Application Packaging and QA</p>
+                        <p>For further details, you can download my CV or check my linkedIN</p>
                     </div>
                 </section>
                 <%-- Works --%>
