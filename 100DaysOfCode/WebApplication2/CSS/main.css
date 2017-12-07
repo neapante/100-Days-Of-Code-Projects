@@ -16,6 +16,7 @@ body {
 .content {
     padding-left: 0;
     padding-right: 0;
+
 }
 
 .container-fluid {
@@ -38,6 +39,12 @@ body {
 .thumbnail {
     border: 0;
     border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.caption {
+    background-color: #fa476f;
 }
 
 
@@ -65,11 +72,11 @@ p {
     color: #333333;
 }
 
-hr {
+/*hr {
     border-top: 5px solid;
     width: 100px;
     margin-left: 0;
-}
+}*/
 
 .work-gallery {
     padding-top: 0;

@@ -8,8 +8,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../Content/bootstrap.min.css?version=1" rel="stylesheet" type="text/css"/>
-    <link href="../CSS/Main.css?version=1" rel="stylesheet" type="text/css"/>
+    <link href="../Content/bootstrap.min.css?version=2" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/Main.css?version=2" rel="stylesheet" type="text/css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=1" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet" />
 </head>
@@ -46,12 +46,13 @@
                     <a name="About-Me"></a>
                     <div class="row">
                         <h1 class=""><strong>About Me</strong></h1>
-                        <%--<hr />--%>
-                        <p>A web and desktop app developer which weapon of choice is C# and ASP.Net. I also know desktop automation using VBScript.</p>
+                        <hr />
+                        <p>I'm Noe Pante. A web and desktop app developer which weapon of choice is C# and ASP.Net. I also know desktop automation using VBScript.</p>
                         <p>I'm currently occupied on learning the C# Language to know more what it can do. And also taking some interest on web graphics design.</p>
-                        <p>Other Technical Proficiencies: HTML, CSS, JavaScript, VBScript</p>
-                        <p>Skillset:Web and Desktop Developer, Tech Support, Application Packaging and QA</p>
-                        <p>For further details, you can download my CV or check my linkedIN</p>
+                        <br />
+                        <p><strong>Other Technical Proficiencies:</strong> HTML, CSS, JavaScript, VBScript</p>
+                        <p><strong>Skillset:</strong> Web and Desktop Developer, Tech Support, Application Packaging and QA</p>
+                        <p>For further details, you can download my CV <i class="fa fa-download"></i> or check my <i class="fa fa-linkedin-square"></i>.</p>
                     </div>
                 </section>
                 <%-- Works --%>
@@ -70,19 +71,43 @@
                     </div>
                     <div class="row" style="padding-top:10px;">
                         <div class="col-xs-6 col-md-3">
-                            <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
+                            <div class="thumbnail">
+                                <img src="http://via.placeholder.com/252x180" />
+                                <div class="caption">
+                                     <h3>Work Related Projects</h3>
+                                     <p>List of my work related projects.</p>
+                                </div>  
+                            </div>
                         </div>
                         <div class="col-xs-6 col-md-3">
-                            <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
+                            <div class="thumbnail">
+                                <img src="http://via.placeholder.com/252x180" />
+                                <div class="caption">
+                                     <a href="Projects/pacecalc.aspx"><h3>Pace Calculator</h3></a>
+                                     <p></p>
+                                </div>  
+                            </div>
                         </div>
                         <div class="col-xs-6 col-md-3">
-                             <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
+                            <div class="thumbnail">
+                                <img src="http://via.placeholder.com/252x180" />
+                                <div class="caption">
+                                     <a href="Projects/FCC/randomquotemachine.aspx"><h3>Random Quote Machine</h3></a>
+                                     <p></p>
+                                </div>  
+                            </div>
                         </div>
                         <div class="col-xs-6 col-md-3">
-                             <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
+                            <div class="thumbnail">
+                                <img src="http://via.placeholder.com/252x180" />
+                                <div class="caption">
+                                    <h3>San Pedro Bee Farm Product Site</h3>
+                                    <p>A product site</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row" style="padding-top:10px;">
+                    <%--<div class="row" style="padding-top:10px;">
                         <div class="col-xs-6 col-md-3">
                             <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
                         </div>
@@ -95,7 +120,7 @@
                         <div class="col-xs-6 col-md-3">
                              <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
                         </div>
-                    </div>
+                    </div>--%>
                 </section>
                 <%-- Resume --%>
                 <section>
