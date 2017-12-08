@@ -8,8 +8,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../Content/bootstrap.min.css?version=2" rel="stylesheet" type="text/css"/>
-    <link href="../CSS/Main.css?version=2" rel="stylesheet" type="text/css"/>
+    <link href="../Content/bootstrap.min.css?version=1" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/Main.css?version=1" rel="stylesheet" type="text/css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=1" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet" />
 </head>
@@ -129,25 +129,25 @@
                         <h1><strong>Resume</strong></h1>
                         <div class="col-md-4">
                             <h3 class="resume-heading exp">Experience</h3>
-                            <h4 class="work-title">Current</h4>
+                            <h5 class="work-title">Web and desktop dev and maintenance</h5>
                             <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4 class="work-title">Current-1</h4>
+                            <h5 class="work-title">QA Analyst, Software Lifecycle Specialist, Infrastructure Maintenance, and Application Packager</h5>
                             <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4 class="work-title">Current-2</h4>
+                            <h5 class="work-title">Messaging and Collaboration Infrastructure System Support Level 1</h5>
                             <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4 class="work-title">Current-3</h4>
+                            <h5 class="work-title">Help Desk Engineer and Junior System Administrator</h5>
                             <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
@@ -156,13 +156,13 @@
                         </div>
                         <div class="col-md-4">
                             <h3 class="resume-heading edu">Education</h3>
-                            <h4 class="work-title">Current</h4>
+                            <h5 class="work-title">Current</h5>
                             <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4 class="work-title">Current-1</h4>
+                            <h5 class="work-title">Current-1</h5>
                             <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
@@ -171,25 +171,25 @@
                         </div>
                         <div class="col-md-4">
                             <h3 class="resume-heading trcrt">Trainings and Certifications</h3>
-                            <h4 class="work-title">Current</h4>
+                            <h5 class="work-title">Current</h5>
                             <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4 class="work-title">Current-1</h4>
+                            <h5 class="work-title">Current-1</h5>
                             <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4 class="work-title">Current-1</h4>
+                            <h5 class="work-title">Current-1</h5>
                             <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                            <h4 class="work-title">Current-1</h4>
+                            <h5 class="work-title">Current-1</h5>
                             <ul class="list-unstyled work-details">
                                 <li>details</li>
                                 <li>details</li>
