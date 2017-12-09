@@ -8,8 +8,8 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link href="../Content/bootstrap.min.css?version=1" rel="stylesheet" type="text/css"/>
-    <link href="../CSS/Main.css?version=1" rel="stylesheet" type="text/css"/>
+    <link href="../Content/bootstrap.min.css?version=2" rel="stylesheet" type="text/css"/>
+    <link href="../CSS/Main.css?version=2" rel="stylesheet" type="text/css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=1" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet" />
 </head>
@@ -52,7 +52,7 @@
                         <br />
                         <p><strong>Other Technical Proficiencies:</strong> HTML, CSS, JavaScript, VBScript</p>
                         <p><strong>Skillset:</strong> Web and Desktop Developer, Tech Support, Application Packaging and QA</p>
-                        <p>For further details, you can download my CV <i class="fa fa-download"></i> or check my <i class="fa fa-linkedin-square"></i>.</p>
+                        <p>For further details, you can <a class="viewCV" href="https://drive.google.com/file/d/0BxnMQ5gE33bUV21MZGNXVlJ2TUk/view?usp=sharing">view my CV</a>  or check my <a href="https://www.linkedin.com/in/noe-emmanuel-pante-b6519151/"><i class="fa fa-linkedin-square fa-2x"></i></a>.</p>
                     </div>
                 </section>
                 <%-- Works --%>
@@ -101,8 +101,8 @@
                             <div class="thumbnail">
                                 <img src="http://via.placeholder.com/252x180" />
                                 <div class="caption">
-                                    <h3>San Pedro Bee Farm Product Site</h3>
-                                    <p>A product site</p>
+                                    <a href="https://codepen.io/neapante/full/BZWeRp"><h3>Weather Web App</h3></a>
+                                    <p></p>
                                 </div>
                             </div>
                         </div>
@@ -203,10 +203,10 @@
                     <div class="row">
                         <h1><strong>Contact Me</strong></h1>
                         <p>
-                            <i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i>
-                            <i class="fa fa-github fa-3x" aria-hidden="true"></i>
-                            <i class="fa fa-twitter fa-3x" aria-hidden="true"></i>
-                            <i class="fa fa-envelope fa-3x" aria-hidden="true"></i>
+                            <a href="https://www.linkedin.com/in/noe-emmanuel-pante-b6519151/"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+                            <a href="https://github.com/neapante"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+                            <a href="https://twitter.com/penanote"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+                            <a href="mailto:neapante@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
                         </p>
                     </div>"
                 </section>

@@ -67,14 +67,33 @@ p {
     color: #333333;
 }
 
+a {
+    color: #333333;
+}
+
+a:hover {
+    color:#fa476f;
+}
+
+
+.viewCV {
+    color: #fa476f;
+}
 /*hr {
     border-top: 5px solid;
     width: 100px;
     margin-left: 0;
 }*/
 
+/*Works Section*/
+
 .work-gallery {
     padding-top: 0;
+}
+
+.caption {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
 }
 
 
@@ -100,15 +119,17 @@ p {
     background-color: #fa476f;
 }
 
+
+
 .work-title, .work-details {
     padding: 6px 12px;
     margin-bottom: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .work-details {
     color: #999999;
-    font-family: 'Open Sans', sans-serif;
+    
 }
 /*navbar custom color*/
 .navbar-default {
