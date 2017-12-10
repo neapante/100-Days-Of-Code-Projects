@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>noe pante</title>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -74,7 +74,7 @@
                             <div class="thumbnail">
                                 <img src="http://via.placeholder.com/252x180" />
                                 <div class="caption">
-                                     <h3>Work Related Projects</h3>
+                                     <a href="Projects/workprojectlist.aspx"><h3>Work Related Projects</h3></a>
                                      <p>List of my work related projects.</p>
                                 </div>  
                             </div>

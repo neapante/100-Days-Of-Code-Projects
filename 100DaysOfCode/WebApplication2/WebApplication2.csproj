@@ -142,6 +142,7 @@
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Projects\sanpedrobeefarm.aspx" />
     <Content Include="Projects\sanpedrobeefarm.html" />
+    <Content Include="Projects\workprojectlist.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
@@ -194,6 +195,13 @@
     </Compile>
     <Compile Include="Projects\sanpedrobeefarm.aspx.designer.cs">
       <DependentUpon>sanpedrobeefarm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Projects\workprojectlist.aspx.cs">
+      <DependentUpon>workprojectlist.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\workprojectlist.aspx.designer.cs">
+      <DependentUpon>workprojectlist.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="index.aspx.cs">
