@@ -127,34 +127,41 @@
                     <a name="Resume"></a>
                     <div class="row">
                         <h1><strong>Resume</strong></h1>
-                        <div class="col-md-4">
-                            <h3 class="resume-heading exp">Experience</h3>
-                            <h5 class="work-title">Web and desktop dev and maintenance</h5>
-                            <ul class="list-unstyled work-details">
-                                <li>details</li>
-                                <li>details</li>
-                                <li>details</li>
+                        <div class="col-md-12">
+                            <h3 class="resume-heading exp">Professional Experience</h3>
+                            <h5 class="work-title">Web and Desktop Application Developer</h5>
+                            <ul class="work-details">
+                                <li>Develop, update and maintain websites, and web apps using ASP.NET, C#, HTML, CSS and JavaScript</li>
+                                <li>Develop and update desktop and server tools using Visual C#</li>
+                                <li>Automate manual tasks using Visual Studio tools to improve the team’s overall productivity</li>
                             </ul>
-                            <h5 class="work-title">QA Analyst, Software Lifecycle Specialist, Infrastructure Maintenance, and Application Packager</h5>
-                            <ul class="list-unstyled work-details">
-                                <li>details</li>
-                                <li>details</li>
-                                <li>details</li>
+                            <h5 class="work-title">QA Specialist and Software Lifecycle Specialist</h5>
+                            <ul class="work-details">
+                                <li>Performs quality assurance testing on applications that will undergo for User Acceptance
+Testing</li>
+                                <li>Validate requests that will be packaged, conduct software technical reviews, and communicate
+with the customers if there is an issue with the software</li>
+                                <li>Performs also Admin Tasks such software information management and maintenance,
+configuration item creation, and software removal requests</li>
                             </ul>
-                            <h5 class="work-title">Messaging and Collaboration Infrastructure System Support Level 1</h5>
-                            <ul class="list-unstyled work-details">
-                                <li>details</li>
-                                <li>details</li>
-                                <li>details</li>
+                            <h5 class="work-title">Application Packager</h5>
+                            <ul class="work-details">
+                                <li>Certify and package applications using Marimba Packager and InstallShield Application.</li>
+                                <li>Deploys the application for User Acceptance Testing and monitor application installations.</li>
+                                <li>Troubleshoot and resolve application packaging and deployment related issues. These issues
+or inquiries can come from e-mails, tickets, or direct messages.</li>
                             </ul>
                             <h5 class="work-title">Help Desk Engineer and Junior System Administrator</h5>
-                            <ul class="list-unstyled work-details">
-                                <li>details</li>
-                                <li>details</li>
-                                <li>details</li>
+                            <ul class="work-details">
+                                <li>Troubleshoot and resolve messaging and collaboration issues such as mail routing issues,
+quota increase for Outlook Mailbox and Sharepoint Sites, account issues, and ActiveSync
+issues and requests.</li>
+                                <li>Monitor servers&#39; health and availability and troubleshoot validated server alerts such as
+server node down issues, disk space issues, and hung threads in BlackBerry servers.</li>
+                                <li>Performs proactive server health check to avoid downtime.</li>
                             </ul>
                         </div>
-                        <div class="col-md-4">
+<%--                        <div class="col-md-4">
                             <h3 class="resume-heading edu">Education</h3>
                             <h5 class="work-title">Current</h5>
                             <ul class="list-unstyled work-details">
@@ -195,7 +202,7 @@
                                 <li>details</li>
                                 <li>details</li>
                             </ul>
-                        </div>
+                        </div>--%>
                     </div>
                 </section>
                 <section>
