@@ -11,7 +11,7 @@
     <link href="../Content/bootstrap.min.css?version=2" rel="stylesheet" type="text/css"/>
     <link href="../CSS/Main.css?version=2" rel="stylesheet" type="text/css"/>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css?version=1" rel="stylesheet" type="text/css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet" />
+   <%-- <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet" />--%>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -28,13 +28,20 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><i class="fa fa-circle-o-notch"></i> np</a>
+          <a class="navbar-brand" href="#"><i class="fa fa-circle-o-notch"></i> np <span id="siteStatus" runat="server"></span></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
             <li><a href="#About-Me">About Me</a></li>
             <li><a href="#Works">Works</a></li>
-            <li><a href="#Resume">Resume</a></li>
+            <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resume <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="#Professional-Experience">Professional Experience</a></li>
+                      <li><a href="#Certifications-and-Trainings-Attended">Certifications and Trainings Attended</a></li>
+                      <li><a href="#Education">Education</a></li>
+                  </ul>
+            </li>
             <li><a href="#Contact-Me">Contact Me</a></li>
           </ul>
         </div>
@@ -52,7 +59,7 @@
                         <br />
                         <p><strong>Other Technical Proficiencies:</strong> HTML, CSS, JavaScript, VBScript</p>
                         <p><strong>Skillset:</strong> Web and Desktop Developer, Tech Support, Application Packaging and QA</p>
-                        <p>For further details, you can <a class="viewCV" href="https://drive.google.com/file/d/0BxnMQ5gE33bUV21MZGNXVlJ2TUk/view?usp=sharing">view my CV</a>  or check my <a href="https://www.linkedin.com/in/noe-emmanuel-pante-b6519151/"><i class="fa fa-linkedin-square fa-2x"></i></a>.</p>
+                        <p>For further details, you can <a class="viewCV" href="https://drive.google.com/open?id=1IMXoolfQCZWRmb0J8bxdOsu5zn7szaMGB6BJkXHI4i8">view my CV</a>  or check my <a href="https://www.linkedin.com/in/noe-emmanuel-pante-b6519151/"><i class="fa fa-linkedin-square fa-2x"></i></a>.</p>
                     </div>
                 </section>
                 <%-- Works --%>
@@ -124,7 +131,7 @@
                 </section>
                 <%-- Resume --%>
                 <section>
-                    <a name="Resume"></a>
+                    <a name="Professional-Experience"></a>
                     <div class="row">
                         <h1><strong>Resume</strong></h1>
                         <div class="col-md-12">
@@ -161,48 +168,32 @@ server node down issues, disk space issues, and hung threads in BlackBerry serve
                                 <li>Performs proactive server health check to avoid downtime.</li>
                             </ul>
                         </div>
-<%--                        <div class="col-md-4">
-                            <h3 class="resume-heading edu">Education</h3>
-                            <h5 class="work-title">Current</h5>
-                            <ul class="list-unstyled work-details">
-                                <li>details</li>
-                                <li>details</li>
-                                <li>details</li>
+                    </div>
+                </section>
+                <%-- Certifications And Trainings And Education --%>
+                <section>
+                    <a name="Certifications-and-Trainings-Attended"></a>
+                    <div class="row">
+                        <h1><strong>Resume</strong></h1>
+                        <div class="col-md-12">
+                            <h3 class="resume-heading edu">Certifications and Trainings Attended</h3>
+                            <h5>Certification</h5>
+                            <h4 class="work-title">ITIL V3 Foundations Certification, January 29, 2014, Passed</h4>
+                            <h5>Trainings Attended</h5>
+                            <ul class="work-details">
+                                <li>Team Leadership - Essential Skills for Technologists (April 2015)</li>
+                                <li>ITIL Foundation Certification (January 2014)</li>
+                                <li>Messaging and Collaboration Boot camp (May 2013)</li>
+                                <li>Deploying SharePoint 2013 (June 2013)</li>
+                                <li>CISCO Certified Network Associate (October 2009 – September 2010)</li>
                             </ul>
-                            <h5 class="work-title">Current-1</h5>
-                            <ul class="list-unstyled work-details">
-                                <li>details</li>
-                                <li>details</li>
-                                <li>details</li>
-                            </ul>
+                            <a name="Education"></a>
+                            <h3 class="resume-heading trcrt">Education</h3>
+                            <h5 class="work-title">Bachelor of Science in Computer Engineering (2006-2011)</h5>
+                            <p class="work-details">Mapua Institute of Technology</p>
+                            <h5 class="work-title">Secondary Level (2002-2006)</h5>
+                            <p class="work-details">Amazing Grace School</p>
                         </div>
-                        <div class="col-md-4">
-                            <h3 class="resume-heading trcrt">Trainings and Certifications</h3>
-                            <h5 class="work-title">Current</h5>
-                            <ul class="list-unstyled work-details">
-                                <li>details</li>
-                                <li>details</li>
-                                <li>details</li>
-                            </ul>
-                            <h5 class="work-title">Current-1</h5>
-                            <ul class="list-unstyled work-details">
-                                <li>details</li>
-                                <li>details</li>
-                                <li>details</li>
-                            </ul>
-                            <h5 class="work-title">Current-1</h5>
-                            <ul class="list-unstyled work-details">
-                                <li>details</li>
-                                <li>details</li>
-                                <li>details</li>
-                            </ul>
-                            <h5 class="work-title">Current-1</h5>
-                            <ul class="list-unstyled work-details">
-                                <li>details</li>
-                                <li>details</li>
-                                <li>details</li>
-                            </ul>
-                        </div>--%>
                     </div>
                 </section>
                 <section>
@@ -229,7 +220,11 @@ server node down issues, disk space issues, and hung threads in BlackBerry serve
             </div>
         <%-- Trust level identifier --%>
         <%--<p id="trustLevel" runat="server"></p>--%>
-  
+        
     </form>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="Scripts/bootstrap.min.js"></script>
 </body>
 </html>
