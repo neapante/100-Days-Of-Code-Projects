@@ -1,11 +1,218 @@
-﻿body {
-    padding-top: 10px;
-    padding-left: 50px;
-    padding-right: 50px;
-    color: #5c6f7d;
+﻿html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    /*padding-top: 10px;*/
+    /*padding-left: 200px;*/
+    /*padding-right: 200px;*/
+    /*background-color: #FFFFFF;*/
+    /*font-family: 'Libre Baskerville', serif;*/
+    /*min-height: 2000px;*/
+    padding-top: 50px;
+}
+
+.content {
+    padding-left: 0;
+    padding-right: 0;
+
+}
+
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 100px;
+    padding-left: 126.5px;
+    padding-right: 126.5px;
+}
+
+.navbar {
+    margin-bottom: 0;
+}
+
+.thumbnail {
+    border: 0;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+section {
+  height: 100vh;
+}
+section:nth-child(1) {
+  /*background: lightblue;*/
+}
+section:nth-child(2) {
+  /*background: lightgreen;*/
+}
+section:nth-child(3) {
+  /*background: purple;*/
+}
+section:nth-child(4) {
+  /*background: purple;*/
 }
 
 
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #999999;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+
+a {
+    color: #333333;
+}
+
+a:hover {
+    color:#fa476f;
+}
+
+
+.viewCV {
+    color: #fa476f;
+}
+
+/*Works Section*/
+
+.work-gallery {
+    padding-top: 0;
+}
+
+.caption {
+    font-family: 'Open Sans', sans-serif;
+    color: #333333;
+}
+
+
+/*Resume Section*/
+.resume-heading {
+    color: #fff;
+    background-color: #3fcadd;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    /*font-size: 14px;*/
+    font-weight: 400;
+    line-height: 1.42857143;
+    border: 1px solid;
+    border-radius: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.edu {
+    background-color: #5a426a;
+}
+
+.trcrt {
+    background-color: #fa476f;
+}
+
+
+
+.work-title, .work-details {
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.work-details {
+    color: #999999;
+    
+}
+/*navbar custom color*/
+.navbar-default {
+  background-color: #3fcadd;
+  border-color: #afeaef;
+}
+.navbar-default .navbar-brand {
+  color: #ffffff;
+}
+.navbar-default .navbar-brand:hover,
+.navbar-default .navbar-brand:focus {
+  color: #f54075;
+}
+.navbar-default .navbar-text {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ffffff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #f54075;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #f54075;
+  background-color: #afeaef;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #f54075;
+  background-color: #afeaef;
+}
+.navbar-default .navbar-toggle {
+  border-color: #afeaef;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #afeaef;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ffffff;
+}
+.navbar-default .navbar-link {
+  color: #ffffff;
+}
+.navbar-default .navbar-link:hover {
+  color: #f54075;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ffffff;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #f54075;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #f54075;
+    background-color: #afeaef;
+  }
+}
+
+/*.bodyInfo {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
+}
 .rqm {
     padding-top: 50px;
 }
+
+#currentPage {
+    border-left: 4px solid rgb(56,56,54);
+    background-color: rgb(177,175,160);
+    color: rgb(56,56,54);
+}*/
+
+
+
