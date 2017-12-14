@@ -121,9 +121,8 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="CSS\pacecalc.css" />
     <Content Include="CSS\randomquotegen.css" />
-    <Content Include="CSS\SanPedroBeeFarm\_JAZ2030.jpg" />
-    <Content Include="CSS\SanPedroBeeFarm\_JAZ2032.jpg" />
-    <Content Include="CSS\SanPedroBeeFarm\StyleSheet1.css" />
+    <Content Include="CSS\sanpedrobeefarm\beelogo.png" />
+    <Content Include="CSS\sanpedrobeefarm\sanpedrobeefarm.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="CSS\main.css" />
     <Content Include="JS\weather.js" />
@@ -141,7 +140,6 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Projects\sanpedrobeefarm.aspx" />
-    <Content Include="Projects\sanpedrobeefarm.html" />
     <Content Include="Projects\TestPage.aspx" />
     <Content Include="Projects\TestPage.xml" />
     <Content Include="Projects\workprojectlist.aspx" />
