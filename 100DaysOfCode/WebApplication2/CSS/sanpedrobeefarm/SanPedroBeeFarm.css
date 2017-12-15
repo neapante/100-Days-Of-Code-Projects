@@ -4,6 +4,23 @@ body {
   padding-bottom: 20px;
 }
 
+/*My modifications*/
+p {
+    color: #808080;
+}
+
+a {
+    font-weight: bold;
+    color: #494843;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+    color: #fff;
+    background-color: #f8b241;
+}
+
+/*end*/
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,

@@ -122,6 +122,10 @@
     <Content Include="CSS\pacecalc.css" />
     <Content Include="CSS\randomquotegen.css" />
     <Content Include="CSS\sanpedrobeefarm\beelogo.png" />
+    <Content Include="CSS\sanpedrobeefarm\placeholder-140_1.png" />
+    <Content Include="CSS\sanpedrobeefarm\placeholder-140_2.png" />
+    <Content Include="CSS\sanpedrobeefarm\placeholder-140_3.png" />
+    <Content Include="CSS\sanpedrobeefarm\placeholder-140_4.png" />
     <Content Include="CSS\sanpedrobeefarm\sanpedrobeefarm.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="CSS\main.css" />
