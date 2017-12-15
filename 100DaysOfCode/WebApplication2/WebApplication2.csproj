@@ -143,7 +143,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
-    <Content Include="Projects\sanpedrobeefarm.aspx" />
+    <Content Include="sanpedrobeefarm.aspx" />
     <Content Include="Projects\TestPage.aspx" />
     <Content Include="Projects\TestPage.xml" />
     <Content Include="Projects\workprojectlist.aspx" />
@@ -193,11 +193,11 @@
     <Compile Include="Projects\pacecalc.aspx.designer.cs">
       <DependentUpon>pacecalc.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Projects\sanpedrobeefarm.aspx.cs">
+    <Compile Include="sanpedrobeefarm.aspx.cs">
       <DependentUpon>sanpedrobeefarm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Projects\sanpedrobeefarm.aspx.designer.cs">
+    <Compile Include="sanpedrobeefarm.aspx.designer.cs">
       <DependentUpon>sanpedrobeefarm.aspx</DependentUpon>
     </Compile>
     <Compile Include="Projects\TestPage.aspx.cs">

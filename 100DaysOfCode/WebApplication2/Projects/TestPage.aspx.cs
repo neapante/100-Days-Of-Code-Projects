@@ -12,7 +12,35 @@ namespace WebApplication2.Projects
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            using (XmlReader reader = XmlReader.Create("TestPage.xml"))
+            //ReadXML();
+            headings1.InnerHtml = "";
+            XmlReader xmlReader = XmlReader.Create("http://www.ecb.int/stats/eurofxref/eurofxref-daily.xml");
+            int passNumber = 0;
+            while(xmlReader.Read())
+            {
+                if((xmlReader.NodeType == XmlNodeType.Element) && (xmlReader.Name == "Cube"))
+                {
+                    if (xmlReader.HasAttributes)
+                    {
+                        if (passNumber == 0)
+                        {
+                            headings1.InnerHtml += "Time: " + xmlReader.GetAttribute("time") + "<br />";
+                            passNumber += 1;
+                        }
+                        else
+                        {
+                            headings1.InnerHtml += xmlReader.GetAttribute("currency") + ": " + xmlReader.GetAttribute("rate");
+                            headings1.InnerHtml += "<br />";
+                        }
+                    }
+                }
+            }
+
+        }
+
+        private void ReadXML()
+        {
+            using (XmlReader reader = XmlReader.Create(""))
             {
                 while (reader.Read())
                 {
@@ -46,12 +74,6 @@ namespace WebApplication2.Projects
                     }
                 }
             }
-
-        }
-
-        public static void ReadXML()
-        {
-           
         }
     }
 }
