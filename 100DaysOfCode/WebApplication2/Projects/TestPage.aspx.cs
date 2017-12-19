@@ -14,7 +14,7 @@ namespace WebApplication2.Projects
         {
             //ReadXML();
             headings1.InnerHtml = "";
-            XmlReader xmlReader = XmlReader.Create("http://www.ecb.int/stats/eurofxref/eurofxref-daily.xml");
+            XmlReader xmlReader = XmlReader.Create("http://noepante.com/projects/testpage.xml");
             int passNumber = 0;
             while(xmlReader.Read())
             {
@@ -24,7 +24,7 @@ namespace WebApplication2.Projects
                     {
                         if (passNumber == 0)
                         {
-                            headings1.InnerHtml += "Time: " + xmlReader.GetAttribute("time") + "<br />";
+                            headings1.InnerHtml += "Time: " + "<span style='color:blue'>" + xmlReader.GetAttribute("time") + "</span>" + "<br />";
                             passNumber += 1;
                         }
                         else
