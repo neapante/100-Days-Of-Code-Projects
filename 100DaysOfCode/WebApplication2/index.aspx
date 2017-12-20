@@ -28,7 +28,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><i class="fa fa-circle-o-notch"></i> np <span id="siteStatus" runat="server"></span></a>
+          <a class="navbar-brand" href="#">Build. Build. Build!</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -51,16 +51,17 @@
                 <%-- About Me --%>
                 <section >
                     <a name="About-Me"></a>
-                    <div class="row">
-                        <h1 class=""><strong>About Me</strong></h1>
+                    <div class="row" id="about" runat="server">
+                    </div>
+                        <%--<h1><strong>About Me</strong></h1>
                         <hr />
                         <p>I'm Noe Pante. A web and desktop app developer which weapon of choice is C# and ASP.Net. I also know desktop automation using VBScript.</p>
                         <p>I'm currently occupied on learning the C# Language to know more what it can do. And also taking some interest on web graphics design.</p>
                         <br />
                         <p><strong>Other Technical Proficiencies:</strong> HTML, CSS, JavaScript, VBScript</p>
                         <p><strong>Skillset:</strong> Web and Desktop Developer, Tech Support, Application Packaging and QA</p>
-                        <p>For further details, you can <a class="viewCV" href="https://drive.google.com/open?id=1IMXoolfQCZWRmb0J8bxdOsu5zn7szaMGB6BJkXHI4i8">view my CV</a>  or check my <a href="https://www.linkedin.com/in/noe-emmanuel-pante-b6519151/"><i class="fa fa-linkedin-square fa-2x"></i></a>.</p>
-                    </div>
+                        <p>For further details, you can <a class="viewCV" href="https://drive.google.com/open?id=1IMXoolfQCZWRmb0J8bxdOsu5zn7szaMGB6BJkXHI4i8">view my CV</a>  or check my <a href="https://www.linkedin.com/in/noe-emmanuel-pante-b6519151/"><i class="fa fa-linkedin-square fa-2x"></i></a>.</p>--%>
+                    
                 </section>
                 <%-- Works --%>
                 <section>

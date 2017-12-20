@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace WebApplication2.Projects
 {
@@ -13,29 +16,15 @@ namespace WebApplication2.Projects
         protected void Page_Load(object sender, EventArgs e)
         {
             //ReadXML();
-            headings1.InnerHtml = "";
-            XmlReader xmlReader = XmlReader.Create("http://noepante.com/projects/testpage.xml");
-            int passNumber = 0;
-            while(xmlReader.Read())
-            {
-                if((xmlReader.NodeType == XmlNodeType.Element) && (xmlReader.Name == "Cube"))
-                {
-                    if (xmlReader.HasAttributes)
-                    {
-                        if (passNumber == 0)
-                        {
-                            headings1.InnerHtml += "Time: " + "<span style='color:blue'>" + xmlReader.GetAttribute("time") + "</span>" + "<br />";
-                            passNumber += 1;
-                        }
-                        else
-                        {
-                            headings1.InnerHtml += xmlReader.GetAttribute("currency") + ": " + xmlReader.GetAttribute("rate");
-                            headings1.InnerHtml += "<br />";
-                        }
-                    }
-                }
-            }
+            section_about.InnerHtml = "";
 
+            XElement root = XElement.Load("http://noepante.com/projects/testpage.xml");
+            IEnumerable<XElement> content = from el in root.Elements("section")
+                                            where (string)el.Attribute("id") == "about"
+                                            select el;
+
+            foreach (XElement el in content)
+                section_about.InnerHtml += el.Element("paragraph").Value;
         }
 
         private void ReadXML()

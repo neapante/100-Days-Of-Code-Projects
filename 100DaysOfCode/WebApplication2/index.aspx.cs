@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Xml.Linq;
 
 namespace WebApplication2
 {
@@ -11,35 +12,70 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //trustLevel.InnerText = GetCurrentTrustLevel().ToString();
-            string siteStat = "- In Progress";
-            siteStatus.InnerText = siteStat;
+            LoadFromXML("http://noepante.com/projects/testpage.xml", "about" );
+
         }
 
-        AspNetHostingPermissionLevel GetCurrentTrustLevel()
+        private void LoadFromXML(string xmlSource, string idValue)
         {
-            foreach (AspNetHostingPermissionLevel trustLevel in
-                    new AspNetHostingPermissionLevel[] {
-            AspNetHostingPermissionLevel.Unrestricted,
-            AspNetHostingPermissionLevel.High,
-            AspNetHostingPermissionLevel.Medium,
-            AspNetHostingPermissionLevel.Low,
-            AspNetHostingPermissionLevel.Minimal
-                    })
+            
+            XElement root = XElement.Load(xmlSource);
+            IEnumerable<XElement> content = from el in root.Elements("section")
+                                            where (string)el.Attribute("id") == idValue
+                                            select el;
+            IEnumerable<XElement> contents = content.Elements();
+            var contentArr = contents.ToArray();
+            for (int i = 0; i < contentArr.Length; i++)
             {
-                try
+                switch (contentArr[i].Name.ToString())
                 {
-                    new AspNetHostingPermission(trustLevel).Demand();
-                }
-                catch (System.Security.SecurityException)
-                {
-                    continue;
-                }
+                    case "header":
+                        about.InnerHtml += "<h1>" + contentArr[i].Value + "</h1>";
+                        break;
 
-                return trustLevel;
+                    default:
+                        break;
+                }
+                if (contentArr[i].Name == "header")
+                    about.InnerHtml += "<h1>" + contentArr[i].Value + "</h1>";
+                else
+                    about.InnerHtml += "<p>" + contentArr[i].Value + "</p>";
             }
+            foreach (XElement el in content)
+            {
 
-            return AspNetHostingPermissionLevel.None;
+                about.InnerHtml += "<h1>" + el.Element("header").Value + "</h1>";
+
+            }
         }
+
+
+
+
+        //AspNetHostingPermissionLevel GetCurrentTrustLevel()
+        //{
+        //    foreach (AspNetHostingPermissionLevel trustLevel in
+        //            new AspNetHostingPermissionLevel[] {
+        //    AspNetHostingPermissionLevel.Unrestricted,
+        //    AspNetHostingPermissionLevel.High,
+        //    AspNetHostingPermissionLevel.Medium,
+        //    AspNetHostingPermissionLevel.Low,
+        //    AspNetHostingPermissionLevel.Minimal
+        //            })
+        //    {
+        //        try
+        //        {
+        //            new AspNetHostingPermission(trustLevel).Demand();
+        //        }
+        //        catch (System.Security.SecurityException)
+        //        {
+        //            continue;
+        //        }
+
+        //        return trustLevel;
+        //    }
+
+        //    return AspNetHostingPermissionLevel.None;
+        //}
     }
 }
