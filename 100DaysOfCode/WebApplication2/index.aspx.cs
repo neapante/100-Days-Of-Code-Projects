@@ -12,13 +12,13 @@ namespace WebApplication2
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            //Control myControl = FindControl("about");
             LoadFromXML("http://noepante.com/projects/testpage.xml", "about" );
 
         }
 
         private void LoadFromXML(string xmlSource, string idValue)
         {
-            
             XElement root = XElement.Load(xmlSource);
             IEnumerable<XElement> content = from el in root.Elements("section")
                                             where (string)el.Attribute("id") == idValue
@@ -34,19 +34,20 @@ namespace WebApplication2
                         break;
 
                     default:
+                        about.InnerHtml += "<p>" + contentArr[i].Value + "</p>";
                         break;
                 }
-                if (contentArr[i].Name == "header")
-                    about.InnerHtml += "<h1>" + contentArr[i].Value + "</h1>";
-                else
-                    about.InnerHtml += "<p>" + contentArr[i].Value + "</p>";
+                //if (contentArr[i].Name == "header")
+                //    about.InnerHtml += "<h1>" + contentArr[i].Value + "</h1>";
+                //else
+                //    about.InnerHtml += "<p>" + contentArr[i].Value + "</p>";
             }
-            foreach (XElement el in content)
-            {
+            //foreach (XElement el in content)
+            //{
 
-                about.InnerHtml += "<h1>" + el.Element("header").Value + "</h1>";
+            //    about.InnerHtml += "<h1>" + el.Element("header").Value + "</h1>";
 
-            }
+            //}
         }
 
 
