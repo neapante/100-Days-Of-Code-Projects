@@ -33,6 +33,24 @@ namespace WebApplication2
                         about.InnerHtml += "<h1>" + contentArr[i].Value + "</h1>";
                         break;
 
+                    case "p":
+                        if (contentArr[i].HasElements)
+                        {
+                            about.InnerHtml += "<p>";
+                            var contentTestArr = contentArr[i].Nodes();
+                            for (int j = 0; j < contentTestArr.Count(); j++)
+                            {
+                                about.InnerHtml += contentTestArr.ElementAt(j).ToString();
+                            }
+                            about.InnerHtml += "</p>";
+                            //about.InnerHtml += "<p>" + contentArr[i].FirstNode.ToString() + contentArr[i].LastNode.ToString() + "</p>";
+                        }
+                        else
+                        {
+                            about.InnerHtml += "<p>" + contentArr[i].Value + "</p>";
+                        }
+                        break;
+
                     default:
                         about.InnerHtml += "<p>" + contentArr[i].Value + "</p>";
                         break;
