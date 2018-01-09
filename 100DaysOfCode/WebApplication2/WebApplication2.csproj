@@ -129,6 +129,7 @@
     <Content Include="CSS\sanpedrobeefarm\sanpedrobeefarm.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="CSS\main.css" />
+    <Content Include="index.xml" />
     <Content Include="JS\weather.js" />
     <Content Include="projects.aspx" />
     <Content Include="Projects\FCC\basiccsharp.aspx" />
@@ -143,6 +144,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Projects\textrpg.aspx" />
     <Content Include="sanpedrobeefarm.aspx" />
     <Content Include="Projects\TestPage.aspx" />
     <Content Include="Projects\TestPage.xml" />
@@ -193,6 +195,13 @@
     <Compile Include="Projects\pacecalc.aspx.designer.cs">
       <DependentUpon>pacecalc.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Projects\textrpg.aspx.cs">
+      <DependentUpon>textrpg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Projects\textrpg.aspx.designer.cs">
+      <DependentUpon>textrpg.aspx</DependentUpon>
+    </Compile>
     <Compile Include="sanpedrobeefarm.aspx.cs">
       <DependentUpon>sanpedrobeefarm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -238,7 +247,9 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Object\" />
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

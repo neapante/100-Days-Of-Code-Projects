@@ -1,16 +1,28 @@
-﻿<?xml version='1.0'?>
+﻿<?xml version="1.0" encoding="utf-8" ?>
 <site>
   <section id='about'>
     <header>About Me</header>
-    <paragraph>I'm Noe Pante. A web and desktop app developer which weapon of choice is C# and ASP.Net. I also know desktop automation using VBScript.</paragraph>
-    <paragraph>I'm currently occupied on learning the C# Language to know more what it can do. And also taking some interest on web graphics design.</paragraph>
-    <paragraph></paragraph>
-    <paragraph></paragraph>
-  </section>
-  <section>
-    <id>aboutt</id>
     <p>I'm Noe Pante. A web and desktop app developer which weapon of choice is C# and ASP.Net. I also know desktop automation using VBScript.</p>
     <p>I'm currently occupied on learning the C# Language to know more what it can do. And also taking some interest on web graphics design.</p>
+    <p>
+      <strong>Other Technical Proficiencies: </strong>
+      <content>HTML, CSS, JavaScript, VBScript </content>
+    </p>
+    <p>
+      <strong>Skillset: </strong>
+      <content>Web and Desktop Developer, Tech Support, Application Packaging and QA</content>
+    </p>
+    <p>
+      <content>You can also </content>
+      <a class="viewCV" href="https://drive.google.com/open?id=1IMXoolfQCZWRmb0J8bxdOsu5zn7szaMGB6BJkXHI4i8">download my CV here </a>
+      <content>or check my </content>
+      <a href="https://www.linkedin.com/in/noe-emmanuel-pante-b6519151/">
+        <i class="fa fa-linkedin-square fa-2x"></i>
+      </a>
+      <content>.</content>
+    </p>
+    <paragraph></paragraph>
+    <paragraph></paragraph>
   </section>
   <word>
     <base>abandon</base>

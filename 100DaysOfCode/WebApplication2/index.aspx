@@ -49,13 +49,13 @@
     </nav>
             <div class="container-fluid">
                 <%-- About Me --%>
-                <section >
+                <%--<section>--%>
                     <a name="About-Me"></a>
                     <div class="row" id="about" runat="server">
                     </div>
-                </section>
+                <%--</section>--%>
                 <%-- Works --%>
-                <section>
+                <%--<section>--%>
                     <a name="Works"></a>
                     <div class="row">
                         <h1 class=""><strong>Works</strong></h1>
@@ -120,9 +120,9 @@
                              <a href="https://placeholder.com" class="thumbnail"><img src="http://via.placeholder.com/252x180" /></a>
                         </div>
                     </div>--%>
-                </section>
+                <%--</section>--%>
                 <%-- Resume --%>
-                <section>
+                <%--<section>--%>
                     <a name="Professional-Experience"></a>
                     <div class="row">
                         <h1><strong>Resume</strong></h1>
@@ -161,9 +161,9 @@ server node down issues, disk space issues, and hung threads in BlackBerry serve
                             </ul>
                         </div>
                     </div>
-                </section>
+                <%--</section>--%>
                 <%-- Certifications And Trainings And Education --%>
-                <section>
+                <%--<section>--%>
                     <a name="Certifications-and-Trainings-Attended"></a>
                     <div class="row">
                         <h1><strong>Resume</strong></h1>
@@ -187,8 +187,8 @@ server node down issues, disk space issues, and hung threads in BlackBerry serve
                             <p class="work-details">Amazing Grace School</p>
                         </div>
                     </div>
-                </section>
-                <section>
+                <%--</section>--%>
+                <%--<section>--%>
                     <a name="Contact-Me"></a>
                     <div class="row">
                         <h1><strong>Contact Me</strong></h1>
@@ -199,7 +199,7 @@ server node down issues, disk space issues, and hung threads in BlackBerry serve
                             <a href="mailto:neapante@gmail.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
                         </p>
                     </div>"
-                </section>
+                <%--</section>--%>
                     <%--<div class="col-md-4 bodyInfo">
                         <strong>Contact</strong>
                         <br /><br />

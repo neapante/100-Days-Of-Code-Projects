@@ -13,7 +13,7 @@ namespace WebApplication2
         protected void Page_Load(object sender, EventArgs e)
         {
             //Control myControl = FindControl("about");
-            LoadFromXML("http://noepante.com/projects/testpage.xml", "about" );
+            LoadFromXML("http://noepante.com/index.xml", "about" );
 
         }
 
