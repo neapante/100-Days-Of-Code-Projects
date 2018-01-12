@@ -9,8 +9,14 @@
 <body>
     <form id="form1" runat="server">
         <div id="playGround" runat="server">
-            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label><br />
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <br />
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <br /><br />
+            <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click" />
+            <asp:Button ID="Button3" runat="server" Text="Button" />
+            <asp:Button ID="Button4" runat="server" Text="Button" />
+            <br />
             <asp:Button ID="Button1" runat="server" Text="Start Game" OnClick="Button1_Click" />
         </div>
     </form>
