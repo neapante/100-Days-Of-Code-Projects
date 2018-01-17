@@ -13,11 +13,12 @@
             <br />
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             <br /><br />
-            <asp:Button ID="Button2" runat="server" Text="Button" OnClick="Button2_Click" />
-            <asp:Button ID="Button3" runat="server" Text="Button" />
-            <asp:Button ID="Button4" runat="server" Text="Button" />
             <br />
-            <asp:Button ID="Button1" runat="server" Text="Start Game" OnClick="Button1_Click" />
+            <asp:Button ID="btnStart" runat="server" Text="Start Game" OnClick="btnStart_Click" Visible="false" />
+            <asp:Button ID="btnPlayAgain" runat="server" Text="Play Again" OnClick="btnPlayAgain_Click" Visible="false" />
+            <asp:Button ID="btnToGrandma" runat="server" Text="Go to Grandma's house" OnClick="btnToGrandma_Click" Visible="false" />
+            <asp:Button ID="btnToGrandpa" runat="server" Text="Go to Grandpa's house" OnClick="btnToGrandpa_Click" Visible="false"/>
+            <asp:Button ID="btnWhoAmI" runat="server" Text="Who am I?" OnClick="btnWhoAmI_Click" Visible="false"/>
         </div>
     </form>
 </body>
