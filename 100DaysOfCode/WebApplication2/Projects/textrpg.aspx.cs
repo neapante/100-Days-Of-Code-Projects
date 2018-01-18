@@ -29,7 +29,7 @@ namespace WebApplication2.Projects
 
             if (Page.IsPostBack)
             {
-
+                //keyObtained = (bool)Session["keyObtained"];
             }
             else
             {
@@ -46,6 +46,8 @@ namespace WebApplication2.Projects
 
         protected void btnStart_Click(object sender, EventArgs e)
         {
+            //Adding session variable to retain value
+            Session["keyObtained"] = false;
             TextBox1.Visible = false;
             btnStart.Visible = false;
             playerName = TextBox1.Text;
@@ -59,18 +61,37 @@ namespace WebApplication2.Projects
 
         protected void btnToGrandma_Click(object sender, EventArgs e)
         {
+            Session["keyObtained"] = false;
             btnToGrandma.Visible = false;
-            Label1.Text = "You saw a big dog at the front of the gate.<br/>Battle with a wild dog starts.<br/>";
-            Battle("dog");
+            Label1.Text = "You saw a big dog at the front of the gate.<br/>Battle with a wild dog starts.<br/><br/>";
+
+            //if battle returns true, player won
+            if (Battle("dog"))
+            {
+                Label1.Text += "<br/><strong>Grandma: Good to see you son. Here is the key to your Grandpa's house.</strong>";
+                keyObtained = true;
+                Session["keyObtained"] = true;
+            }
+            else if (Battle("dog") == false)
+            {
+                PlayerDiedMessage();
+            }
+            
         }
 
-        private void Battle(string monsterName)
+        private void PlayerDiedMessage()
+        {
+            Label1.Text += "YOU DIED";
+            btnPlayAgain.Visible = true;
+        }
+
+        private bool Battle(string monsterName)
         {
             if (monsterName == "dog")
             {
                 while (dogHP != 0)
                 {//battle with dog
-                 //you attack dog
+                    //you attack dog
                     Label1.Text += "You attack dog with " + playerATK.ToString() + " damage.<br/>";
                     dogHP = dogHP - playerATK;
                     Label1.Text += "Dog life now is " + dogHP.ToString() + "<br/>";
@@ -80,19 +101,17 @@ namespace WebApplication2.Projects
                     Label1.Text += "Your life now is " + playerHP.ToString() + "<br/>";
                 }
 
+                //if player HP hits less than or equal 0, return false. means player died.
                 if (playerHP <= 0)
                 {
-                    Label1.Text += "YOU DIED";
-                    btnPlayAgain.Visible = true;
-                    
+                   return false;
                 }
                 else
                 {
-                    Label1.Text += "<br/><strong>Grandma: Good to see you son. Here is the key to your Grandpa's house.</strong>";
-                    keyObtained = true;
+                   return true;
                 }
-
              }
+            return false;
         }
 
         protected void btnPlayAgain_Click(object sender, EventArgs e)
@@ -104,12 +123,33 @@ namespace WebApplication2.Projects
 
         protected void btnToGrandpa_Click(object sender, EventArgs e)
         {
-
+            keyObtained = (bool)Session["keyObtained"];
+            if (keyObtained == false)
+            {
+                Label1.Text = "You need a key to enter the house.<br/>Maybe someone has it.<br/>";
+            }
+            else
+            {
+                Label1.Text = "You used the key and entered grandpa's house.<br/>";
+                Label1.Text = "A dog is guarding a room";
+                //if battle returns true, player won
+                if (Battle("dog") == true)
+                {
+                    Label1.Text += "<br/><strong>You opened the door and your grandpa was not there.</strong><br/>";
+                }
+                else if (Battle("dog") == false)
+                {
+                    PlayerDiedMessage();
+                }
+            }
         }
 
         protected void btnWhoAmI_Click(object sender, EventArgs e)
         {
-
+            Label1.Text = "<strong>Who Am I?</strong><br/>";
+            Label1.Text += "I'm just a concerned human. Your grandpa called and said he needs assistance.<br/>";
+            Label1.Text += "He gave me your number.";
+            Label1.Text += "That's it";
         }
     }
 }
