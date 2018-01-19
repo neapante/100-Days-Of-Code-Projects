@@ -13,7 +13,7 @@ body {
     padding-top: 50px;
 }
 
-.content {
+/*.content {
     padding-left: 0;
     padding-right: 0;
 
@@ -43,22 +43,6 @@ body {
     padding-right: 0;
 }
 
-section {
-  height: 100vh;
-}
-section:nth-child(1) {
-  /*background: lightblue;*/
-}
-section:nth-child(2) {
-  /*background: lightgreen;*/
-}
-section:nth-child(3) {
-  /*background: purple;*/
-}
-section:nth-child(4) {
-  /*background: purple;*/
-}
-
 
 h1 {
     font-family: 'Montserrat', sans-serif;
@@ -81,27 +65,26 @@ a:hover {
 
 .viewCV {
     color: #fa476f;
-}
+}*/
 
 /*Works Section*/
 
-.work-gallery {
+/*.work-gallery {
     padding-top: 0;
 }
 
 .caption {
     font-family: 'Open Sans', sans-serif;
     color: #333333;
-}
+}*/
 
 
 /*Resume Section*/
-.resume-heading {
+/*.resume-heading {
     color: #fff;
     background-color: #3fcadd;
     padding: 6px 12px;
     margin-bottom: 0;
-    /*font-size: 14px;*/
     font-weight: 400;
     line-height: 1.42857143;
     border: 1px solid;
@@ -128,9 +111,9 @@ a:hover {
 .work-details {
     color: #999999;
     
-}
+}*/
 /*navbar custom color*/
-.navbar-default {
+/*.navbar-default {
   background-color: #3fcadd;
   border-color: #afeaef;
 }
@@ -198,7 +181,7 @@ a:hover {
     color: #f54075;
     background-color: #afeaef;
   }
-}
+}*/
 
 /*.bodyInfo {
     padding: 0 0 0 0;
