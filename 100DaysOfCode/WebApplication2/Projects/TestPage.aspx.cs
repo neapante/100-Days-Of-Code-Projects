@@ -15,54 +15,60 @@ namespace WebApplication2.Projects
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //ReadXML();
-            section_about.InnerHtml = "";
-
-            XElement root = XElement.Load("http://noepante.com/projects/testpage.xml");
-            IEnumerable<XElement> content = from el in root.Elements("section")
-                                            where (string)el.Attribute("id") == "about"
-                                            select el;
-
-            foreach (XElement el in content)
-                section_about.InnerHtml += el.Element("paragraph").Value;
+            //Control myControl = FindControl("about");
+            LoadFromXML("http://noepante.com/index.xml", "about" );
         }
 
-        private void ReadXML()
+        private void LoadFromXML(string xmlSource, string idValue)
         {
-            using (XmlReader reader = XmlReader.Create(""))
+            XElement root = XElement.Load(xmlSource);
+            IEnumerable<XElement> content = from el in root.Elements("section")
+                                            where (string)el.Attribute("id") == idValue
+                                            select el;
+            IEnumerable<XElement> contents = content.Elements();
+            var contentArr = contents.ToArray();
+
+            for (int i = 0; i < contentArr.Length; i++)
             {
-                while (reader.Read())
+                switch (contentArr[i].Name.ToString())
                 {
-                    // Only detect start elements.
-                    if (reader.IsStartElement())
-                    {
-                        // Get element name and switch on it.
-                        switch (reader.Name)
+                    case "header":
+                        about.InnerHtml += "<h1>" + contentArr[i].Value.ToString() + "</h1>";
+                        break;
+
+                    case "p":
+                        if (contentArr[i].HasElements)
                         {
-                            case "perls":
-                                // Detect this element.
-                                //Console.WriteLine("Start <perls> element.");
-                                break;
-                            case "article":
-                                // Detect this article element.
-                                Console.WriteLine("Start <article> element.");
-                                // Search for the attribute name on this current node.
-                                string attribute = reader["name"];
-                                if (attribute != null)
-                                {
-                                    //Console.WriteLine("  Has attribute name: " + attribute);
-                                    headings1.InnerText = attribute.ToString();
-                                }
-                                // Next read will contain text.
-                                if (reader.Read())
-                                {
-                                    Console.WriteLine("  Text node: " + reader.Value.Trim());
-                                }
-                                break;
+                            about.InnerHtml += "<p>";
+                            var contentTestArr = contentArr[i].Nodes();
+                            for (int j = 0; j < contentTestArr.Count(); j++)
+                            {
+                                about.InnerHtml += contentTestArr.ElementAt(j).ToString();
+                            }
+                            about.InnerHtml += "</p>";
+                            //about.InnerHtml += "<p>" + contentArr[i].FirstNode.ToString() + contentArr[i].LastNode.ToString() + "</p>";
                         }
-                    }
+                        else
+                        {
+                            about.InnerHtml += "<p>" + contentArr[i].Value + "</p>";
+                        }
+                        break;
+
+                    default:
+                        about.InnerHtml += "<p>" + contentArr[i].Value + "</p>";
+                        break;
                 }
+                //if (contentArr[i].Name == "header")
+                //    about.InnerHtml += "<h1>" + contentArr[i].Value + "</h1>";
+                //else
+                //    about.InnerHtml += "<p>" + contentArr[i].Value + "</p>";
             }
+            //foreach (XElement el in content)
+            //{
+
+            //    about.InnerHtml += "<h1>" + el.Element("header").Value + "</h1>";
+
+            //}
         }
     }
 }
