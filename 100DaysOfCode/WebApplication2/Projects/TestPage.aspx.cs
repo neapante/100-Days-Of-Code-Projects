@@ -1,4 +1,21 @@
-﻿using System;
+﻿/*XML Reader to populate HTML content using C#*/
+/*Details:
+ * Loading the XML
+ * - I'm loading the XML using XElement.Load("xml source") and using the XML (noepante.com/index.xml) that I uploaded in my site.
+ * 
+ * LINQ Query
+ * - This will return the element that has section tag with an ID indicated in the idValue. Then I accessed the elements and then converted it to Array so that I can easily access the data.
+ * 
+ * Outputting the data to HTML
+ * - I used switch to output the data. I accessed the InnerHTML property of about control(which was declared in the ASPX page) and appended whatever the data that will be gathered.
+ * 
+ * Formatting Conditions
+ * If header found as a tag of the child, add an <h1> tag.
+ * If p was found, use <p> tag.
+ */
+
+
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -15,7 +32,6 @@ namespace WebApplication2.Projects
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //Control myControl = FindControl("about");
             LoadFromXML("http://noepante.com/index.xml", "about" );
         }
 
@@ -34,8 +50,9 @@ namespace WebApplication2.Projects
                 {
                     case "header":
                         about.InnerHtml += "<h1>" + contentArr[i].Value.ToString() + "</h1>";
+                        
                         break;
-
+                        
                     case "p":
                         if (contentArr[i].HasElements)
                         {
@@ -46,7 +63,6 @@ namespace WebApplication2.Projects
                                 about.InnerHtml += contentTestArr.ElementAt(j).ToString();
                             }
                             about.InnerHtml += "</p>";
-                            //about.InnerHtml += "<p>" + contentArr[i].FirstNode.ToString() + contentArr[i].LastNode.ToString() + "</p>";
                         }
                         else
                         {
@@ -58,17 +74,7 @@ namespace WebApplication2.Projects
                         about.InnerHtml += "<p>" + contentArr[i].Value + "</p>";
                         break;
                 }
-                //if (contentArr[i].Name == "header")
-                //    about.InnerHtml += "<h1>" + contentArr[i].Value + "</h1>";
-                //else
-                //    about.InnerHtml += "<p>" + contentArr[i].Value + "</p>";
             }
-            //foreach (XElement el in content)
-            //{
-
-            //    about.InnerHtml += "<h1>" + el.Element("header").Value + "</h1>";
-
-            //}
         }
     }
 }
