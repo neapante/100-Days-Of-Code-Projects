@@ -204,6 +204,7 @@
     <Compile Include="Projects\textrpg.aspx.designer.cs">
       <DependentUpon>textrpg.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Projects\TextRPGObjects\Monsters.cs" />
     <Compile Include="sanpedrobeefarm.aspx.cs">
       <DependentUpon>sanpedrobeefarm.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

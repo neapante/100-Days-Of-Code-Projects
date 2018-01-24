@@ -6,6 +6,7 @@ using System.Threading;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using WebApplication2.Projects.TextRPGObjects;
 
 namespace WebApplication2.Projects
 {
@@ -22,6 +23,9 @@ namespace WebApplication2.Projects
 
         //indicators
         bool keyObtained = false;
+
+        //Classes
+        Monsters mnstr = new Monsters();
         
 
         protected void Page_Load(object sender, EventArgs e)
@@ -66,13 +70,16 @@ namespace WebApplication2.Projects
             Label1.Text = "You saw a big dog at the front of the gate.<br/>Battle with a wild dog starts.<br/><br/>";
 
             //if battle returns true, player won
-            if (Battle("dog"))
+            bool result = mnstr.battle("dog", dogHP, dogATK, playerHP, playerATK);
+            Label1.Text = mnstr.battleMessage;
+
+            if (result == true)
             {
                 Label1.Text += "<br/><strong>Grandma: Good to see you son. Here is the key to your Grandpa's house.</strong>";
                 keyObtained = true;
                 Session["keyObtained"] = true;
             }
-            else if (Battle("dog") == false)
+            else if (result == false)
             {
                 PlayerDiedMessage();
             }
