@@ -8,8 +8,22 @@ namespace WebApplication2.Projects.TextRPGObjects
     public class Monsters
     {
         public string battleMessage = "";
-        public bool battle(string monsterName, int monsterHP, int monsterATK, int playerHP, int playerATK)
+        public int battle(string monsterName, int playerHP, int playerATK)
         {
+            int monsterHP = 0;
+            int monsterATK = 1;
+
+            if (monsterName == "dog")
+            {
+                monsterHP = 5;
+                monsterATK = 1;
+            }
+            else
+            {
+                monsterHP = 10;
+                monsterATK = 2;
+            }
+            
             //Reset battle message
             battleMessage = "";
 
@@ -26,6 +40,11 @@ namespace WebApplication2.Projects.TextRPGObjects
             }
 
             //Return if player dies or not
+            return playerHP;
+        }
+
+        public bool CheckIfPlayerIsAlive(int playerHP)
+        {
             if (playerHP <= 0)
             {
                 return false;

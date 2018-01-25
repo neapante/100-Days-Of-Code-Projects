@@ -12,21 +12,17 @@ namespace WebApplication2.Projects
 {
     public partial class textrpg : System.Web.UI.Page
     {
-        int state = 0;
-        int playerHP = 10;
-        int playerATK = 1, playerDEF = 1;
-        string playerName = "";
-
-        //dog
-        int dogHP = 5;
-        int dogATK = 1;
-
-        //indicators
-        bool keyObtained = false;
 
         //Classes
         Monsters mnstr = new Monsters();
-        
+
+        int state = 0;
+        int playerHP = 20;
+        int playerATK = 1, playerDEF = 1;
+        string playerName = "";
+
+        //indicators
+        bool keyObtained = false;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -43,21 +39,26 @@ namespace WebApplication2.Projects
 
         private void LoadGame()
         {
+            Label1.ForeColor = System.Drawing.Color.Black;
             Label1.Text = "Wake up. Wake up. What is your name?";
+            TextBox1.Visible = true;
             TextBox1.Text = "Test Name";
             btnStart.Visible = true;
+            btnPlayAgain.Visible = false;
         }
 
         protected void btnStart_Click(object sender, EventArgs e)
         {
-            //Adding session variable to retain value
+            //Session variable to retain value
             Session["keyObtained"] = false;
+            Session["playerHP"] = playerHP;
+
             TextBox1.Visible = false;
             btnStart.Visible = false;
             playerName = TextBox1.Text;
 
-            Label1.Text = "Welcome, " + playerName + "." + "<br/>";
-            Label1.Text += "Your grandfather is missing. You need to find him. He is sick and needs his medication. You should find him now.";
+            Label1.Text = "Welcome, " + "<strong>" + playerName + "<strong/>" + "." + "<br/>";
+            Label1.Text += "Your grandmother called and told me that your grandfather is missing. She told me you need to find him. He is sick and needs his medication. You should find him now.";
             btnToGrandma.Visible = true;
             btnToGrandpa.Visible = true;
             btnWhoAmI.Visible = true;
@@ -65,72 +66,32 @@ namespace WebApplication2.Projects
 
         protected void btnToGrandma_Click(object sender, EventArgs e)
         {
-            Session["keyObtained"] = false;
+            //Session["keyObtained"] = false;
             btnToGrandma.Visible = false;
             Label1.Text = "You saw a big dog at the front of the gate.<br/>Battle with a wild dog starts.<br/><br/>";
 
             //if battle returns true, player won
-            bool result = mnstr.battle("dog", dogHP, dogATK, playerHP, playerATK);
+            int result = mnstr.battle("dog", (int)Session["playerHP"], playerATK);
+            Session["playerHP"] = result;
             Label1.Text = mnstr.battleMessage;
 
-            if (result == true)
+            if (mnstr.CheckIfPlayerIsAlive(result) == true)
             {
-                Label1.Text += "<br/><strong>Grandma: Good to see you son. Here is the key to your Grandpa's house.</strong>";
-                keyObtained = true;
+                Label1.Text += "<br/><strong>Grandma: Good to see you son. Here is the key to your Grandpa's house. By the way how are you?</strong>";
                 Session["keyObtained"] = true;
             }
-            else if (result == false)
+            else if (mnstr.CheckIfPlayerIsAlive(result) == false)
             {
                 PlayerDiedMessage();
             }
             
         }
 
-        private void PlayerDiedMessage()
-        {
-            Label1.Text += "YOU DIED";
-            btnPlayAgain.Visible = true;
-        }
-
-        private bool Battle(string monsterName)
-        {
-            if (monsterName == "dog")
-            {
-                while (dogHP != 0)
-                {//battle with dog
-                    //you attack dog
-                    Label1.Text += "You attack dog with " + playerATK.ToString() + " damage.<br/>";
-                    dogHP = dogHP - playerATK;
-                    Label1.Text += "Dog life now is " + dogHP.ToString() + "<br/>";
-                    //dog attack you
-                    Label1.Text += "Dog attacks you with " + dogATK.ToString() + " damage.<br/>";
-                    playerHP = playerHP - dogATK;
-                    Label1.Text += "Your life now is " + playerHP.ToString() + "<br/>";
-                }
-
-                //if player HP hits less than or equal 0, return false. means player died.
-                if (playerHP <= 0)
-                {
-                   return false;
-                }
-                else
-                {
-                   return true;
-                }
-             }
-            return false;
-        }
-
-        protected void btnPlayAgain_Click(object sender, EventArgs e)
-        {
-            LoadGame();
-        }
-
-
-
         protected void btnToGrandpa_Click(object sender, EventArgs e)
         {
             keyObtained = (bool)Session["keyObtained"];
+            btnToGrandpa.Visible = false;
+
             if (keyObtained == false)
             {
                 Label1.Text = "You need a key to enter the house.<br/>Maybe someone has it.<br/>";
@@ -139,12 +100,16 @@ namespace WebApplication2.Projects
             {
                 Label1.Text = "You used the key and entered grandpa's house.<br/>";
                 Label1.Text = "A dog is guarding a room";
+
+                int result = mnstr.battle("dog", (int)Session["playerHP"], playerATK);
+                Session["playerHP"] = result;
+                Label1.Text = mnstr.battleMessage;
                 //if battle returns true, player won
-                if (Battle("dog") == true)
+                if (mnstr.CheckIfPlayerIsAlive(result) == true)
                 {
                     Label1.Text += "<br/><strong>You opened the door and your grandpa was not there.</strong><br/>";
                 }
-                else if (Battle("dog") == false)
+                else if (mnstr.CheckIfPlayerIsAlive(result) == false)
                 {
                     PlayerDiedMessage();
                 }
@@ -157,6 +122,24 @@ namespace WebApplication2.Projects
             Label1.Text += "I'm just a concerned human. Your grandpa called and said he needs assistance.<br/>";
             Label1.Text += "He gave me your number.";
             Label1.Text += "That's it";
+            btnToGrandma.Visible = true;
+            btnToGrandpa.Visible = true;
+            btnWhoAmI.Visible = false;
+        }
+
+        private void PlayerDiedMessage()
+        {
+            Label1.Text += "<br/>YOU DIED";
+            Label1.ForeColor = System.Drawing.Color.Red;
+            btnToGrandma.Visible = false;
+            btnToGrandpa.Visible = false;
+            btnWhoAmI.Visible = false;
+            btnPlayAgain.Visible = true;
+        }
+
+        protected void btnPlayAgain_Click(object sender, EventArgs e)
+        {
+            LoadGame();
         }
     }
 }
