@@ -11,7 +11,7 @@ namespace WebApplication2.Projects.TextRPGObjects
         public int battle(string monsterName, int playerHP, int playerATK)
         {
             int monsterHP = 0;
-            int monsterATK = 1;
+            int monsterATK = 0;
 
             if (monsterName == "dog")
             {
@@ -39,7 +39,7 @@ namespace WebApplication2.Projects.TextRPGObjects
                 battleMessage += "Your life now is " + playerHP.ToString() + "<br/>";
             }
 
-            //Return if player dies or not
+            //Return Players HP
             return playerHP;
         }
 
@@ -55,9 +55,22 @@ namespace WebApplication2.Projects.TextRPGObjects
             }
         }
 
+        public string DisplayStats(int playerHP, int playerATK, int playerDEF)
+        {
+            string stats = "";
+            stats += "HP: " + playerHP.ToString() + "<br/>";
+            stats += "ATK: " + playerATK.ToString() + "<br/>";
+            stats += "DEF: " + playerDEF.ToString() + "<br/>";
+            stats += "----------------------------";
+            stats += "<br/><br/>";
+
+            return stats;
+        }
+
         public string BattleMessage(string message)
         {
             return message;
         }
+
     }
 }

@@ -39,19 +39,26 @@ namespace WebApplication2.Projects
 
         private void LoadGame()
         {
+            //Display stats
+            Session["playerHP"] = playerHP; Session["playerATK"] = playerATK; Session["playerDEF"] = playerDEF;
+            lblStats.Text = mnstr.DisplayStats((int)Session["playerHP"], (int)Session["playerATK"], (int)Session["playerDEF"]);
+
             Label1.ForeColor = System.Drawing.Color.Black;
             Label1.Text = "Wake up. Wake up. What is your name?";
             TextBox1.Visible = true;
-            TextBox1.Text = "Test Name";
+            //TextBox1.Text = "Test Name";
             btnStart.Visible = true;
             btnPlayAgain.Visible = false;
+            btnToGrandma.Visible = false;
+            btnToGrandpa.Visible = false;
+            btnWhoAmI.Visible = false;
         }
 
         protected void btnStart_Click(object sender, EventArgs e)
         {
             //Session variable to retain value
             Session["keyObtained"] = false;
-            Session["playerHP"] = playerHP;
+            lblStats.Text = mnstr.DisplayStats((int)Session["playerHP"], (int)Session["playerATK"], (int)Session["playerDEF"]);
 
             TextBox1.Visible = false;
             btnStart.Visible = false;
@@ -66,8 +73,7 @@ namespace WebApplication2.Projects
 
         protected void btnToGrandma_Click(object sender, EventArgs e)
         {
-            //Session["keyObtained"] = false;
-            btnToGrandma.Visible = false;
+            lblStats.Text = mnstr.DisplayStats((int)Session["playerHP"], (int)Session["playerATK"], (int)Session["playerDEF"]);
             Label1.Text = "You saw a big dog at the front of the gate.<br/>Battle with a wild dog starts.<br/><br/>";
 
             //if battle returns true, player won
@@ -84,11 +90,15 @@ namespace WebApplication2.Projects
             {
                 PlayerDiedMessage();
             }
-            
+
+            btnToGrandma.Visible = false;
+            btnToGrandpa.Visible = true;
+            btnWhoAmI.Visible = true;
         }
 
         protected void btnToGrandpa_Click(object sender, EventArgs e)
         {
+            lblStats.Text = mnstr.DisplayStats((int)Session["playerHP"], (int)Session["playerATK"], (int)Session["playerDEF"]);
             keyObtained = (bool)Session["keyObtained"];
             btnToGrandpa.Visible = false;
 
@@ -114,6 +124,9 @@ namespace WebApplication2.Projects
                     PlayerDiedMessage();
                 }
             }
+            btnToGrandma.Visible = true;
+            btnToGrandpa.Visible = false;
+            btnWhoAmI.Visible = true;
         }
 
         protected void btnWhoAmI_Click(object sender, EventArgs e)
@@ -129,8 +142,8 @@ namespace WebApplication2.Projects
 
         private void PlayerDiedMessage()
         {
-            Label1.Text += "<br/>YOU DIED";
             Label1.ForeColor = System.Drawing.Color.Red;
+            Label1.Text += "<br/><strong>YOU DIED<strong/>";
             btnToGrandma.Visible = false;
             btnToGrandpa.Visible = false;
             btnWhoAmI.Visible = false;

@@ -8,10 +8,12 @@
 </head>
 <body>
     <form id="form1" runat="server">
-    <div id="section_about" runat="server">
-        <h1 id="headings1" runat="server"></h1>
-        <h1 id="headings2" runat="server"></h1>
-    </div>
+        <div runat="server">
+            <section id="about" runat="server">
+            </section>
+            <h1 id="headings1" runat="server"></h1>
+            <h1 id="headings2" runat="server"></h1>
+        </div>
     </form>
 </body>
 </html>
