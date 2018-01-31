@@ -1,18 +1,6 @@
 ﻿/*XML Reader to populate HTML content using C#*/
-/*Details:
- * Loading the XML
- * - I'm loading the XML using XElement.Load("xml source") and using the XML (noepante.com/index.xml) that I uploaded in my site.
- * 
- * LINQ Query
- * - This will return the element that has section tag with an ID indicated in the idValue. Then I accessed the elements and then converted it to Array so that I can easily access the data.
- * 
- * Outputting the data to HTML
- * - I used switch to output the data. I accessed the InnerHTML property of about control(which was declared in the ASPX page) and appended whatever the data that will be gathered.
- * 
- * Formatting Conditions
- * If header found as a tag of the child, add an <h1> tag.
- * If p was found, use <p> tag.
- */
+/*Documentation*/
+/*https://noepante.wordpress.com/2018/01/31/a-xml-reader-to-populate-html-using-c/ */
 
 
 using System;
